@@ -345,7 +345,10 @@
                 seasonData = JSON.parse(savedData);
                 if (seasonData.weeks.length > 0) {
                     updateExistingWeeksDisplay();
-                    showDashboard();
+                    checkCommissionerMode();
+                    if (isCommissioner) {
+                        showDashboard();
+                    }
                     return;
                 }
             }
@@ -354,15 +357,24 @@
 
         function checkCommissionerMode() {
             // Check if commissioner access is needed
-            if (seasonData.weeks.length > 0 || localStorage.getItem('cfb-commissioner-mode') === 'true') {
-                isCommissioner = localStorage.getItem('cfb-commissioner-mode') === 'true';
+            const savedCommissionerMode = localStorage.getItem('cfb-commissioner-mode');
+            
+            if (seasonData.weeks.length > 0 || savedCommissionerMode === 'true') {
+                isCommissioner = savedCommissionerMode === 'true';
                 if (!isCommissioner) {
                     document.getElementById('commissioner-login').style.display = 'block';
-                    return;
+                    document.getElementById('drop-zone').style.display = 'none';
+                    return false;
                 }
+            } else {
+                // First time setup - allow upload without password
+                isCommissioner = true;
+                localStorage.setItem('cfb-commissioner-mode', 'true');
             }
-            // First time setup or commissioner already logged in
-            isCommissioner = true;
+            
+            document.getElementById('commissioner-login').style.display = 'none';
+            document.getElementById('drop-zone').style.display = 'block';
+            return true;
         }
 
         function checkCommissionerPassword() {
@@ -371,7 +383,13 @@
                 isCommissioner = true;
                 localStorage.setItem('cfb-commissioner-mode', 'true');
                 document.getElementById('commissioner-login').style.display = 'none';
+                document.getElementById('drop-zone').style.display = 'block';
                 document.getElementById('commissioner-password').value = '';
+                
+                // If we have data, show dashboard, otherwise stay on upload screen
+                if (seasonData.weeks.length > 0) {
+                    showDashboard();
+                }
             } else {
                 alert('Incorrect commissioner password');
                 document.getElementById('commissioner-password').value = '';
@@ -379,9 +397,19 @@
         }
 
         function logoutCommissioner() {
+            if (!confirm('Are you sure you want to logout as commissioner?')) {
+                return;
+            }
             isCommissioner = false;
             localStorage.removeItem('cfb-commissioner-mode');
-            showUploadScreen();
+            
+            // If there's season data, go to dashboard in view-only mode
+            if (seasonData.weeks.length > 0) {
+                showDashboard();
+            } else {
+                // No data, show upload screen with login prompt
+                showUploadScreen();
+            }
         }
 
         // Save data to localStorage
@@ -787,16 +815,69 @@
         }
 
         function showUploadScreen() {
-            if (seasonData.weeks.length > 0 && !isCommissioner) {
-                checkCommissionerMode();
-                if (!isCommissioner) return;
-            }
-            
             document.getElementById('upload-screen').style.display = 'block';
             document.getElementById('dashboard-screen').style.display = 'none';
+            
+            // Check if commissioner login is needed
+            if (seasonData.weeks.length > 0 && !isCommissioner) {
+                checkCommissionerMode();
+            }
+            
             fileInput.value = '';
             hideError();
             hideLoading();
+        }
+
+        function showDashboard() {
+            // Always show dashboard, but disable upload functionality if not commissioner
+            document.getElementById('upload-screen').style.display = 'none';
+            document.getElementById('dashboard-screen').style.display = 'block';
+            
+            // Update header buttons based on commissioner status
+            const headerButtons = document.querySelector('#dashboard-screen .text-right');
+            if (isCommissioner) {
+                headerButtons.innerHTML = `
+                    <button 
+                        onclick="showUploadScreen()"
+                        class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors mr-2"
+                    >
+                        Add New Week
+                    </button>
+                    <button 
+                        onclick="logoutCommissioner()"
+                        class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors mr-2"
+                    >
+                        Logout
+                    </button>
+                    <button 
+                        onclick="exportData()"
+                        class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                    >
+                        Export Data
+                    </button>
+                `;
+            } else {
+                headerButtons.innerHTML = `
+                    <button 
+                        onclick="showCommissionerLogin()"
+                        class="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition-colors mr-2"
+                    >
+                        Commissioner Login
+                    </button>
+                    <button 
+                        onclick="exportData()"
+                        class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
+                    >
+                        Export Data
+                    </button>
+                `;
+            }
+            
+            renderDashboard();
+        }
+
+        function showCommissionerLogin() {
+            showUploadScreen();
         }
 
         function resetSeason() {

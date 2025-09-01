@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Football Picks - Live Standings</title>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .drop-zone {
+            border: 2px dashed #cbd5e1;
+            border-radius: 8px;
+            padding: 2rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        .drop-zone:hover, .drop-zone.dragover {
+            border-color: #3b82f6;
+            background-color: #eff6ff;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        const { useState, useEffect } = React;
+        const { Trophy, Upload, Users, Target, TrendingUp, TrendingDown, Award } = lucide;
+
+        const CFBDashboard = () => {
+            const [data, setData] = useState(null);
+            const [loading, setLoading] = useState(false);
+            const [error, setError] = useState(null);
+            const [dragOver, setDragOver] = useState(false);
+
+            const processCSVData = (csvText) => {
+                try {
+                    const parsed = Papa.parse(csvText, {
+                        header: true,
+                        dynamicTyping: true,
+                        skipEmptyLines: true
+                    });
+
+                    const participants = parsed.data.filter(row => row['Email Address']);
+                    
+                    const standings = participants.map(participant => {
+                        const email = participant['Email Address'];
+                        const name = email.split('@')[0];
+                        
+                        // Find total points - look for the last numeric column or sum point columns
+                        let totalPoints = 0;
+                        let gamesPlayed = 0;
+                        
+                        Object.keys(participant).forEach(key => {
+                            if (key.startsWith('Column') && typeof participant[key] === 'number') {
+                                gamesPlayed++;
+                            }
+                        });
+                        
+                        // Use the last column if it's a number (likely total), otherwise sum columns
+                        const lastCol = Object.keys(participant).pop();
+                        if (typeof participant[lastCol] === 'number' && participant[lastCol] > 0) {
+                            totalPoints = participant[lastCol];
+                        } else {
+                            Object.keys(participant).forEach(key => {
+                                if (key.startsWith('Column') && typeof participant[key] === 'number') {
+                                    totalPoints += participant[key];
+                                }
+                            });
+                        }
+                        
+                        return {
+                            name: name,
+                            email: email,
+                            totalPoints: totalPoints,
+                            gamesPlayed: gamesPlayed,
+                            avgPoints: gamesPlayed > 0 ? (totalPoints / gamesPlayed) : 0
+                        };
+                    });
+
+                    // Sort by total points
+                    const sortedStandings = _.orderBy(standings, ['totalPoints'], ['desc'])
+                        .map((participant, index) => ({
+                            ...participant,
+                            rank: index + 1,
+                            change: 0 // Could calculate this if we had previous week data
+                        }));
+
+                    // Calculate some stats
+                    const totalParticipants = sortedStandings.length;
+                    const averageScore = totalParticipants > 0 ? 
+                        (sortedStandings.reduce((sum, p) => sum + p.totalPoints, 0) / totalParticipants).toFixed(1) : 0;
+                    const leader = sortedStandings[0];
+
+                    return {
+                        standings: sortedStandings,
+                        stats: {
+                            totalParticipants,
+                            averageScore,
+                            leader,
+                            gamesPerPlayer: sortedStandings[0]?.gamesPlayed || 0
+                        }
+                    };
+                } catch (err) {
+                    throw new Error('Failed to process CSV data: ' + err.message);
+                }
+            };
+
+            const handleFileUpload = (file) => {
+                if (!file.name.toLowerCase().endsWith('.csv')) {
+                    setError('Please upload a CSV file');
+                    return;
+                }
+
+                setLoading(true);
+                setError(null);
+
+                const reader = new FileReader();
+                reader.onload = (e) => {
+                    try {
+                        const csvText = e.target.result;
+                        const processedData = processCSVData(csvText);
+                        setData(processedData);
+                        setLoading(false);
+                    } catch (err) {
+                        setError(err.message);
+                        setLoading(false);
+                    }
+                };
+                reader.readAsText(file);
+            };
+
+            const handleDrop = (e) => {
+                e.preventDefault();
+                setDragOver(false);
+                const file = e.dataTransfer.files[0];
+                if (file) handleFileUpload(file);
+            };
+
+            const handleDragOver = (e) => {
+                e.preventDefault();
+                setDragOver(true);
+            };
+
+            const handleDragLeave = (e) => {
+                e.preventDefault();
+                setDragOver(false);
+            };
+
+            const getRankIcon = (rank) => {
+                if (rank === 1) return React.createElement(Trophy, { className: "w-6 h-6 text-yellow-500" });
+                if (rank === 2) return React.createElement(Award, { className: "w-6 h-6 text-gray-400" });
+                if (rank === 3) return React.createElement(Award, { className: "w-6 h-6 text-orange-600" });
+                return React.createElement('span', { className: "w-6 h-6 flex items-center justify-center text-gray-600 font-bold" }, rank);
+            };
+
+            const getProgressColor = (avgPoints) => {
+                if (avgPoints >= 1.2) return 'bg-green-500';
+                if (avgPoints >= 1.1) return 'bg-blue-500';
+                if (avgPoints >= 1.0) return 'bg-yellow-500';
+                return 'bg-red-500';
+            };
+
+            if (!data) {
+                return (
+                    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+                        <div className="max-w-4xl mx-auto">
+                            <div className="bg-white rounded-xl shadow-lg p-8 text-center">
+                                <div className="mb-6">
+                                    {React.createElement(Trophy, { className: "w-16 h-16 text-yellow-500 mx-auto mb-4" })}
+                                    <h1 className="text-3xl font-bold text-gray-800 mb-2">
+                                        College Football Picks Dashboard
+                                    </h1>
+                                    <p className="text-gray-600">Upload your weekly picks CSV to generate live standings</p>
+                                </div>
+
+                                <div 
+                                    className={`drop-zone ${dragOver ? 'dragover' : ''}`}
+                                    onDrop={handleDrop}
+                                    onDragOver={handleDragOver}
+                                    onDragLeave={handleDragLeave}
+                                    onClick={() => document.getElementById('file-input').click()}
+                                >
+                                    {loading ? (
+                                        <div>
+                                            <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                                            <p>Processing your picks...</p>
+                                        </div>
+                                    ) : (
+                                        <div>
+                                            {React.createElement(Upload, { className: "w-12 h-12 text-gray-400 mx-auto mb-4" })}
+                                            <p className="text-lg font-semibold text-gray-700 mb-2">
+                                                Drop your CSV file here
+                                            </p>
+                                            <p className="text-gray-500 mb-4">or click to browse</p>
+                                            <p className="text-sm text-gray-400">
+                                                Export your Google Sheet as CSV and drop it here
+                                            </p>
+                                        </div>
+                                    )}
+                                </div>
+
+                                <input 
+                                    type="file" 
+                                    id="file-input" 
+                                    accept=".csv" 
+                                    onChange={(e) => e.target.files[0] && handleFileUpload(e.target.files[0])}
+                                    className="hidden"
+                                />
+
+                                {error && (
+                                    <div className="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
+                                        <p className="text-red-700">{error}</p>
+                                    </div>
+                                )}
+
+                                <div className="mt-8 text-left">
+                                    <h3 className="text-lg font-semibold text-gray-800 mb-3">How to use:</h3>
+                                    <ol className="list-decimal list-inside space-y-2 text-gray-600">
+                                        <li>Go to your Google Sheet with picks data</li>
+                                        <li>File → Download → Comma-separated values (.csv)</li>
+                                        <li>Drag and drop the CSV file above</li>
+                                        <li>Share this page URL with your league!</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                );
+            }
+
+            const { standings, stats } = data;
+
+            return (
+                <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
+                    <div className="max-w-6xl mx-auto">
+                        {/* Header */}
+                        <div className="bg-white rounded-xl shadow-lg p-6 mb-6">
+                            <div className="flex items-center justify-between">
+                                <div>
+                                    <h1 className="text-3xl font-bold text-gray-800 flex items-center gap-3">
+                                        {React.createElement(Trophy, { className: "w-8 h-8 text-yellow-500" })}
+                                        College Football Picks - Live Standings
+                                    </h1>
+                                    <p className="text-gray-600 mt-2">Current week standings</p>
+                                </div>
+                                <div className="text-right">
+                                    <button 
+                                        onClick={() => setData(null)}
+                                        className="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+                                    >
+                                        Upload New Week
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Quick Stats */}
+                        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-6">
+                            <div className="bg-white rounded-lg shadow-md p-4">
+                                <div className="flex items-center justify-between">
+                                    <div>
+                                        <p className="text-sm text-gray-500">Current Leader</p>
+                                        <p className="text-lg font-bold text-gray-800">{stats.leader?.name || 'N/A'}</p>
+                                        <p className="text-sm text-green-600">{stats.leader?.totalPoints || 0} points</p>
+                                    </div>
+                                    {React.createElement(Trophy, { className: "w-8 h-8 text-yellow-500" })}
+                                </div>
+                            </div>
+                            
+                            <div className="bg-white rounded-lg shadow-md p-4">
+                                <div className="flex items-center justify-between">
+                                    <div>
+                                        <p className="text-sm text-gray-500">Total Players</p>
+                                        <p className="text-2xl font-bold text-gray-800">{stats.totalParticipants}</p>
+                                    </div>
+                                    {React.createElement(Users, { className: "w-8 h-8 text-blue-500" })}
+                                </div>
+                            </div>
+
+                            <div className="bg-white rounded-lg shadow-md p-4">
+                                <div className="flex items-center justify-between">
+                                    <div>
+                                        <p className="text-sm text-gray-500">Average Score</p>
+                                        <p className="text-2xl font-bold text-gray-800">{stats.averageScore}</p>
+                                    </div>
+                                    {React.createElement(Target, { className: "w-8 h-8 text-purple-500" })}
+                                </div>
+                            </div>
+
+                            <div className="bg-white rounded-lg shadow-md p-4">
+                                <div className="flex items-center justify-between">
+                                    <div>
+                                        <p className="text-sm text-gray-500">Games Picked</p>
+                                        <p className="text-2xl font-bold text-gray-800">{stats.gamesPerPlayer}</p>
+                                        <p className="text-sm text-gray-500">per player</p>
+                                    </div>
+                                    <div className="w-8 h-8 bg-indigo-500 rounded-full flex items-center justify-center text-white font-bold">
+                                        {stats.gamesPerPlayer}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        {/* Main Standings Table */}
+                        <div className="bg-white rounded-xl shadow-lg overflow-hidden">
+                            <div className="p-6 border-b border-gray-200">
+                                <h2 className="text-2xl font-bold text-gray-800">Live Standings</h2>
+                                <p className="text-gray-600">Current rankings based on total points earned</p>
+                            </div>
+                            
+                            <div className="overflow-x-auto">
+                                <table className="w-full">
+                                    <thead className="bg-gray-50">
+                                        <tr>
+                                            <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Rank</th>
+                                            <th className="px-6 py-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Player</th>
+                                            <th className="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Total Points</th>
+                                            <th className="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Games</th>
+                                            <th className="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Avg Points</th>
+                                            <th className="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Performance</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody className="bg-white divide-y divide-gray-200">
+                                        {standings.map((player, index) => (
+                                            <tr key={player.name} className={`hover:bg-gray-50 transition-colors ${index < 3 ? 'bg-gradient-to-r from-yellow-50 to-transparent' : ''}`}>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="flex items-center gap-2">
+                                                        {getRankIcon(player.rank)}
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap">
+                                                    <div className="flex items-center">
+                                                        <div className="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                                            {player.name.charAt(0).toUpperCase()}
+                                                        </div>
+                                                        <div className="ml-3">
+                                                            <div className="text-sm font-medium text-gray-900">{player.name}</div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap text-center">
+                                                    <div className="text-lg font-bold text-gray-900">{player.totalPoints}</div>
+                                                    {index === 0 && <div className="text-xs text-yellow-600">LEADER</div>}
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-600">
+                                                    {player.gamesPlayed}
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap text-center">
+                                                    <div className="text-sm font-medium text-gray-900">{player.avgPoints.toFixed(2)}</div>
+                                                </td>
+                                                <td className="px-6 py-4 whitespace-nowrap text-center">
+                                                    <div className="w-full bg-gray-200 rounded-full h-2">
+                                                        <div 
+                                                            className={`h-2 rounded-full ${getProgressColor(player.avgPoints)}`}
+                                                            style={{ width: `${Math.min((player.avgPoints / 1.3) * 100, 100)}%` }}
+                                                        ></div>
+                                                    </div>
+                                                    <div className="text-xs text-gray-500 mt-1">
+                                                        {player.avgPoints >= 1.2 ? 'Excellent' : 
+                                                         player.avgPoints >= 1.1 ? 'Good' :
+                                                         player.avgPoints >= 1.0 ? 'Average' : 'Below Avg'}
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        ))}
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                        {/* Top 3 Highlight */}
+                        <div className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+                            {standings.slice(0, 3).map((player, index) => (
+                                <div key={player.name} className={`rounded-xl shadow-lg p-6 ${
+                                    index === 0 ? 'bg-gradient-to-br from-yellow-400 to-yellow-600 text-white' :
+                                    index === 1 ? 'bg-gradient-to-br from-gray-300 to-gray-500 text-white' :
+                                    'bg-gradient-to-br from-orange-400 to-orange-600 text-white'
+                                }`}>
+                                    <div className="flex items-center justify-between mb-4">
+                                        <h3 className="text-lg font-bold">
+                                            {index === 0 ? '🥇 1st Place' : index === 1 ? '🥈 2nd Place' : '🥉 3rd Place'}
+                                        </h3>
+                                        <div className="text-2xl font-bold">{player.totalPoints}</div>
+                                    </div>
+                                    <div className="text-lg font-semibold">{player.name}</div>
+                                    <div className="text-sm opacity-90">Avg: {player.avgPoints.toFixed(2)} pts/game</div>
+                                </div>
+                            ))}
+                        </div>
+
+                        {/* Footer */}
+                        <div className="mt-6 text-center text-gray-500 text-sm">
+                            <p>Upload a new CSV file each week to update standings • Powered by GitHub Pages</p>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        ReactDOM.render(React.createElement(CFBDashboard), document.getElementById('root'));
+    </script>
+</body>
+</html>

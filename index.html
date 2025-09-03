@@ -673,14 +673,26 @@
             showView('season-total');
         }
 
+        function renderDashboard() {
+            const players = Object.values(seasonData.players || {});
+            const weeksCount = (seasonData.weeks || []).length;
+
+            // Update season info
+            document.getElementById('season-info').textContent = 
+                `${weeksCount} weeks • ${players.length} players • ${Object.keys(seasonData.games || {}).length} unique games`;
+
+            updateLastUpdated();
+            showView('season-total');
+        }
+
         function renderSeasonTotal() {
-            const players = Object.values(seasonData.players);
-            players.sort((a, b) => b.totalPoints - a.totalPoints);
+            const players = Object.values(seasonData.players || {});
+            players.sort((a, b) => (b.totalPoints || 0) - (a.totalPoints || 0));
             
-            const weeksCount = seasonData.weeks.length;
+            const weeksCount = (seasonData.weeks || []).length;
             const leader = players[0];
             const avgScore = players.length > 0 ? 
-                (players.reduce((sum, p) => sum + p.totalPoints, 0) / players.length).toFixed(1) : 0;
+                (players.reduce((sum, p) => sum + (p.totalPoints || 0), 0) / players.length).toFixed(1) : 0;
 
             // Update stats
             document.getElementById('season-leader-name').textContent = leader?.name || 'N/A';
@@ -693,9 +705,20 @@
             const tableBody = document.getElementById('season-standings-table');
             tableBody.innerHTML = '';
 
+            if (players.length === 0) {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td colspan="6" class="px-6 py-8 text-center text-gray-500">
+                        No season data available. Upload your first week to get started!
+                    </td>
+                `;
+                tableBody.appendChild(row);
+                return;
+            }
+
             players.forEach((player, index) => {
-                const weeklyAvg = weeksCount > 0 ? (player.totalPoints / weeksCount).toFixed(1) : 0;
-                const trend = getTrend(player.weeklyScores);
+                const weeklyAvg = weeksCount > 0 ? ((player.totalPoints || 0) / weeksCount).toFixed(1) : 0;
+                const trend = getTrend(player.weeklyScores || []);
                 
                 const row = document.createElement('tr');
                 row.className = `hover:bg-gray-50 transition-colors ${index < 3 ? 'bg-gradient-to-r from-yellow-50 to-transparent' : ''}`;
@@ -707,15 +730,15 @@
                     <td class="px-6 py-4 whitespace-nowrap">
                         <div class="flex items-center">
                             <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                                ${player.name.charAt(0).toUpperCase()}
+                                ${(player.name || 'Unknown').charAt(0).toUpperCase()}
                             </div>
                             <div class="ml-3">
-                                <div class="text-sm font-medium text-gray-900">${player.name}</div>
+                                <div class="text-sm font-medium text-gray-900">${player.name || 'Unknown'}</div>
                             </div>
                         </div>
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-center">
-                        <div class="text-lg font-bold text-gray-900">${player.totalPoints}</div>
+                        <div class="text-lg font-bold text-gray-900">${player.totalPoints || 0}</div>
                         ${index === 0 ? '<div class="text-xs text-yellow-600">LEADER</div>' : ''}
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-600">

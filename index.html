@@ -26,17 +26,11 @@
             background-color: #3b82f6;
             color: white;
         }
-        .heatmap-cell {
-            transition: all 0.2s ease;
-        }
-        .heatmap-cell:hover {
-            transform: scale(1.05);
-        }
     </style>
 </head>
 <body>
     <div id="root">
-        <!-- Initial Upload State -->
+        <!-- Upload Screen -->
         <div id="upload-screen" class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
             <div class="max-w-4xl mx-auto">
                 <div class="bg-white rounded-xl shadow-lg p-8 text-center">
@@ -47,21 +41,25 @@
                         <h1 class="text-3xl font-bold text-gray-800 mb-2">
                             College Football Season Dashboard
                         </h1>
-                        <p class="text-gray-600">Track picks, standings, and analytics across the entire season</p>
+                        <p class="text-gray-600">Upload your weekly picks CSV to generate live standings</p>
                     </div>
 
-                    <!-- Existing Weeks Display -->
-                    <div id="existing-weeks" class="mb-6" style="display: none;">
-                        <h3 class="text-lg font-semibold text-gray-800 mb-3">Current Season Data:</h3>
+                    <!-- Existing Weeks -->
+                    <div id="existing-weeks" style="display: none;" class="mb-6">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-3">Current Season:</h3>
                         <div id="weeks-list" class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4"></div>
-                        <button onclick="resetSeason()" class="text-red-600 hover:text-red-800 text-sm">Reset Entire Season</button>
+                        <div class="flex gap-2 justify-center">
+                            <button onclick="viewDashboard()" class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
+                                View Dashboard
+                            </button>
+                            <button onclick="resetAll()" class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700">
+                                Reset Season
+                            </button>
+                        </div>
                     </div>
 
-                    <div 
-                        id="drop-zone" 
-                        class="drop-zone"
-                        onclick="document.getElementById('file-input').click()"
-                    >
+                    <!-- Upload Zone -->
+                    <div id="drop-zone" class="drop-zone" onclick="document.getElementById('file-input').click()">
                         <div id="upload-content">
                             <div class="w-12 h-12 mx-auto mb-4 bg-gray-400 rounded-full flex items-center justify-center">
                                 <span class="text-white text-xl">📁</span>
@@ -70,9 +68,6 @@
                                 <span id="upload-text">Drop Week 1 CSV file here</span>
                             </p>
                             <p class="text-gray-500 mb-4">or click to browse</p>
-                            <p class="text-sm text-gray-400">
-                                Each week's CSV will be added to the season totals
-                            </p>
                         </div>
                         <div id="loading-content" style="display: none;">
                             <div class="w-12 h-12 mx-auto mb-4">
@@ -82,12 +77,7 @@
                         </div>
                     </div>
 
-                    <input 
-                        type="file" 
-                        id="file-input" 
-                        accept=".csv" 
-                        style="display: none;"
-                    />
+                    <input type="file" id="file-input" accept=".csv" style="display: none;">
 
                     <div id="error-message" style="display: none;" class="mt-4 p-4 bg-red-50 border border-red-200 rounded-lg">
                         <p class="text-red-700" id="error-text"></p>
@@ -98,15 +88,15 @@
                         <ol class="list-decimal list-inside space-y-2 text-gray-600">
                             <li>Upload Week 1 CSV from your Google Form responses</li>
                             <li>Continue uploading each week's CSV as the season progresses</li>
-                            <li>View season totals, weekly breakdowns, and pick analytics</li>
-                            <li>Share this URL - it remembers all uploaded weeks!</li>
+                            <li>View comprehensive analytics and standings</li>
+                            <li>Export and share data with your league</li>
                         </ol>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- Dashboard State -->
+        <!-- Dashboard Screen -->
         <div id="dashboard-screen" style="display: none;" class="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 p-4">
             <div class="max-w-7xl mx-auto">
                 <!-- Header -->
@@ -117,19 +107,13 @@
                                 <span class="text-yellow-500 text-4xl">🏆</span>
                                 CFB Season Dashboard
                             </h1>
-                            <p class="text-gray-600 mt-2" id="season-info">Season overview and analytics</p>
+                            <p class="text-gray-600 mt-2" id="season-info">Season overview</p>
                         </div>
-                        <div class="text-right">
-                            <button 
-                                onclick="showUploadScreen()"
-                                class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors mr-2"
-                            >
+                        <div class="flex gap-2">
+                            <button onclick="addNewWeek()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700">
                                 Add New Week
                             </button>
-                            <button 
-                                onclick="exportData()"
-                                class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-                            >
+                            <button onclick="exportData()" class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700">
                                 Export Data
                             </button>
                         </div>
@@ -139,17 +123,11 @@
                 <!-- Navigation -->
                 <div class="bg-white rounded-xl shadow-lg p-4 mb-6">
                     <div class="flex flex-wrap gap-2">
-                        <button onclick="showView('season-total')" class="nav-button px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 font-medium active" id="nav-season-total">
+                        <button onclick="showView('season-total')" class="nav-button px-4 py-2 rounded-lg bg-blue-600 text-white font-medium" id="nav-season-total">
                             📊 Season Totals
                         </button>
-                        <button onclick="showView('weekly-breakdown')" class="nav-button px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 font-medium" id="nav-weekly-breakdown">
+                        <button onclick="showView('weekly-breakdown')" class="nav-button px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 font-medium" id="nav-weekly">
                             📅 Weekly Breakdown  
-                        </button>
-                        <button onclick="showView('pick-analysis')" class="nav-button px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 font-medium" id="nav-pick-analysis">
-                            🔥 Pick Analysis
-                        </button>
-                        <button onclick="showView('pick-distribution')" class="nav-button px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 font-medium" id="nav-pick-distribution">
-                            📈 Pick Distribution
                         </button>
                     </div>
                 </div>
@@ -211,12 +189,11 @@
                             <table class="w-full">
                                 <thead class="bg-gray-50">
                                     <tr>
-                                        <th class="px-6 py-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Rank</th>
-                                        <th class="px-6 py-4 text-left text-sm font-medium text-gray-500 uppercase tracking-wider">Player</th>
-                                        <th class="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Total Points</th>
-                                        <th class="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Weeks</th>
-                                        <th class="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Weekly Avg</th>
-                                        <th class="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase tracking-wider">Trend</th>
+                                        <th class="px-6 py-4 text-left text-sm font-medium text-gray-500 uppercase">Rank</th>
+                                        <th class="px-6 py-4 text-left text-sm font-medium text-gray-500 uppercase">Player</th>
+                                        <th class="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase">Total Points</th>
+                                        <th class="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase">Weeks</th>
+                                        <th class="px-6 py-4 text-center text-sm font-medium text-gray-500 uppercase">Weekly Avg</th>
                                     </tr>
                                 </thead>
                                 <tbody id="season-standings-table" class="bg-white divide-y divide-gray-200">
@@ -228,7 +205,7 @@
 
                 <!-- Weekly Breakdown View -->
                 <div id="weekly-breakdown-view" style="display: none;">
-                    <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
+                    <div class="bg-white rounded-xl shadow-lg p-6">
                         <h2 class="text-2xl font-bold text-gray-800 mb-4">Weekly Performance</h2>
                         <div class="overflow-x-auto">
                             <table class="w-full text-sm">
@@ -243,138 +220,77 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- Pick Analysis View -->
-                <div id="pick-analysis-view" style="display: none;">
-                    <div class="bg-white rounded-xl shadow-lg p-6 mb-6">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-4">Pick Analysis Heatmap</h2>
-                        <p class="text-gray-600 mb-6">Intensity shows performance level across weeks and players</p>
-                        <div class="overflow-x-auto">
-                            <div id="heatmap-container"></div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Pick Distribution View -->
-                <div id="pick-distribution-view" style="display: none;">
-                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                        <div class="bg-white rounded-xl shadow-lg p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Most Popular Picks</h3>
-                            <div id="popular-picks-list"></div>
-                        </div>
-                        <div class="bg-white rounded-xl shadow-lg p-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Controversial Games</h3>
-                            <div id="controversial-picks-list"></div>
-                        </div>
-                    </div>
-                    <div class="bg-white rounded-xl shadow-lg p-6 mt-6">
-                        <h3 class="text-xl font-bold text-gray-800 mb-4">Weekly Pick Consensus</h3>
-                        <div id="weekly-consensus-chart"></div>
-                    </div>
-                </div>
-
-                <!-- Season Summary Footer -->
-                <div class="mt-6 text-center text-gray-500 text-sm">
-                    <p>Season dashboard automatically saves your data • Data stored in browser</p>
-                </div>
             </div>
         </div>
     </div>
 
     <script>
-        let seasonData = {
-            weeks: [],
-            players: {},
-            games: {}
-        };
+        // Global variables
+        let seasonData = { weeks: [], players: {}, games: {} };
 
-        // Load saved data on page load
-        window.addEventListener('load', () => {
-            const savedData = localStorage.getItem('cfb-season-data');
-            if (savedData) {
-                seasonData = JSON.parse(savedData);
-                if (seasonData.weeks.length > 0) {
-                    updateExistingWeeksDisplay();
-                    showDashboard();
+        // Initialize
+        window.addEventListener('load', function() {
+            loadData();
+            setupEventListeners();
+        });
+
+        function loadData() {
+            try {
+                const savedData = localStorage.getItem('cfb-season-data');
+                if (savedData) {
+                    seasonData = JSON.parse(savedData);
+                    if (!seasonData.weeks) seasonData.weeks = [];
+                    if (!seasonData.players) seasonData.players = {};
+                    if (!seasonData.games) seasonData.games = {};
+                    
+                    if (seasonData.weeks.length > 0) {
+                        showExistingWeeks();
+                    }
                 }
-            }
-        });
-
-        // Save data to localStorage
-        function saveData() {
-            localStorage.setItem('cfb-season-data', JSON.stringify(seasonData));
-        }
-
-        // Setup drag and drop
-        const dropZone = document.getElementById('drop-zone');
-        const fileInput = document.getElementById('file-input');
-
-        dropZone.addEventListener('dragover', (e) => {
-            e.preventDefault();
-            dropZone.classList.add('dragover');
-        });
-
-        dropZone.addEventListener('dragleave', (e) => {
-            e.preventDefault();
-            dropZone.classList.remove('dragover');
-        });
-
-        dropZone.addEventListener('drop', (e) => {
-            e.preventDefault();
-            dropZone.classList.remove('dragover');
-            const files = e.dataTransfer.files;
-            if (files.length > 0) {
-                handleFileUpload(files[0]);
-            }
-        });
-
-        fileInput.addEventListener('change', (e) => {
-            if (e.target.files.length > 0) {
-                handleFileUpload(e.target.files[0]);
-            }
-        });
-
-        function showError(message) {
-            document.getElementById('error-message').style.display = 'block';
-            document.getElementById('error-text').textContent = message;
-        }
-
-        function hideError() {
-            document.getElementById('error-message').style.display = 'none';
-        }
-
-        function showLoading() {
-            document.getElementById('upload-content').style.display = 'none';
-            document.getElementById('loading-content').style.display = 'block';
-        }
-
-        function hideLoading() {
-            document.getElementById('upload-content').style.display = 'block';
-            document.getElementById('loading-content').style.display = 'none';
-        }
-
-        function updateUploadText() {
-            const nextWeek = seasonData.weeks.length + 1;
-            document.getElementById('upload-text').textContent = `Drop Week ${nextWeek} CSV file here`;
-        }
-
-        function updateExistingWeeksDisplay() {
-            if (seasonData.weeks.length > 0) {
-                document.getElementById('existing-weeks').style.display = 'block';
-                const weeksList = document.getElementById('weeks-list');
-                weeksList.innerHTML = '';
-                
-                seasonData.weeks.forEach((week, index) => {
-                    const weekCard = document.createElement('div');
-                    weekCard.className = 'bg-blue-100 rounded-lg p-2 text-center';
-                    weekCard.innerHTML = `
-                        <div class="font-semibold text-blue-800">Week ${index + 1}</div>
-                        <div class="text-xs text-blue-600">${week.players.length} players</div>
-                    `;
-                    weeksList.appendChild(weekCard);
-                });
                 updateUploadText();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                seasonData = { weeks: [], players: {}, games: {} };
             }
+        }
+
+        function saveData() {
+            try {
+                localStorage.setItem('cfb-season-data', JSON.stringify(seasonData));
+                console.log('Data saved successfully');
+            } catch (error) {
+                console.error('Error saving data:', error);
+            }
+        }
+
+        function setupEventListeners() {
+            const dropZone = document.getElementById('drop-zone');
+            const fileInput = document.getElementById('file-input');
+
+            dropZone.addEventListener('dragover', function(e) {
+                e.preventDefault();
+                dropZone.classList.add('dragover');
+            });
+
+            dropZone.addEventListener('dragleave', function(e) {
+                e.preventDefault();
+                dropZone.classList.remove('dragover');
+            });
+
+            dropZone.addEventListener('drop', function(e) {
+                e.preventDefault();
+                dropZone.classList.remove('dragover');
+                const files = e.dataTransfer.files;
+                if (files.length > 0) {
+                    handleFileUpload(files[0]);
+                }
+            });
+
+            fileInput.addEventListener('change', function(e) {
+                if (e.target.files.length > 0) {
+                    handleFileUpload(e.target.files[0]);
+                }
+            });
         }
 
         function handleFileUpload(file) {
@@ -396,6 +312,7 @@
                     showDashboard();
                     hideLoading();
                 } catch (err) {
+                    console.error('Processing error:', err);
                     showError('Failed to process CSV: ' + err.message);
                     hideLoading();
                 }
@@ -413,18 +330,16 @@
             const participants = parsed.data.filter(row => row['Email Address']);
             const games = [];
             
-            // Extract games from headers
+            // Extract games
             const headers = parsed.meta.fields;
             const gameHeaders = headers.filter(h => h && h.includes(' at ') && h.includes('('));
             
             gameHeaders.forEach(header => {
                 if (header.includes('+') || header.includes('-')) {
-                    // This is a spread pick
                     const gameKey = header.split('(')[0].trim();
                     games.push({
                         name: gameKey,
                         type: 'spread',
-                        line: header.match(/[+-]?\d+\.?\d*/)[0],
                         column: header
                     });
                 }
@@ -438,21 +353,21 @@
                 let gamesPlayed = 0;
                 const picks = {};
                 
-                // Extract picks for each game
+                // Extract picks
                 games.forEach(game => {
                     if (participant[game.column]) {
                         picks[game.name] = participant[game.column];
                     }
                 });
                 
-                // Count points from Column entries
+                // Count points
                 Object.keys(participant).forEach(key => {
                     if (key.startsWith('Column') && typeof participant[key] === 'number') {
                         gamesPlayed++;
                     }
                 });
                 
-                // Get total points from last column or sum
+                // Get total points
                 const lastCol = Object.keys(participant).pop();
                 if (typeof participant[lastCol] === 'number' && participant[lastCol] > 0) {
                     totalPoints = participant[lastCol];
@@ -469,18 +384,13 @@
                     email: email,
                     totalPoints: totalPoints,
                     gamesPlayed: gamesPlayed,
-                    avgPoints: gamesPlayed > 0 ? (totalPoints / gamesPlayed) : 0,
                     picks: picks
                 };
             });
 
-            // Sort by total points
             standings.sort((a, b) => b.totalPoints - a.totalPoints);
             
-            return {
-                players: standings,
-                games: games
-            };
+            return { players: standings, games: games };
         }
 
         function addWeekToSeason(weekData) {
@@ -494,195 +404,114 @@
                         email: player.email,
                         weeklyScores: [],
                         totalPoints: 0,
-                        totalGames: 0,
-                        picks: {}
+                        totalGames: 0
                     };
                 }
                 
                 seasonData.players[player.name].weeklyScores.push(player.totalPoints);
                 seasonData.players[player.name].totalPoints += player.totalPoints;
                 seasonData.players[player.name].totalGames += player.gamesPlayed;
-                
-                // Store picks for this week
-                Object.keys(player.picks).forEach(game => {
-                    if (!seasonData.players[player.name].picks[game]) {
-                        seasonData.players[player.name].picks[game] = [];
-                    }
-                    seasonData.players[player.name].picks[game].push(player.picks[game]);
-                });
             });
 
-            // Update games data
-            weekData.games.forEach(game => {
-                if (!seasonData.games[game.name]) {
-                    seasonData.games[game.name] = {
-                        name: game.name,
-                        weeks: [],
-                        picks: []
-                    };
-                }
-                seasonData.games[game.name].weeks.push(seasonData.weeks.length);
+            showExistingWeeks();
+        }
+
+        function showExistingWeeks() {
+            if (seasonData.weeks.length > 0) {
+                document.getElementById('existing-weeks').style.display = 'block';
+                const weeksList = document.getElementById('weeks-list');
+                weeksList.innerHTML = '';
                 
-                // Collect picks for this game this week
-                const weekPicks = {};
-                weekData.players.forEach(player => {
-                    if (player.picks[game.name]) {
-                        weekPicks[player.name] = player.picks[game.name];
-                    }
+                seasonData.weeks.forEach((week, index) => {
+                    const weekCard = document.createElement('div');
+                    weekCard.className = 'bg-blue-100 rounded-lg p-2 text-center';
+                    weekCard.innerHTML = `
+                        <div class="font-semibold text-blue-800">Week ${index + 1}</div>
+                        <div class="text-xs text-blue-600">${week.players ? week.players.length : 0} players</div>
+                    `;
+                    weeksList.appendChild(weekCard);
                 });
-                seasonData.games[game.name].picks.push(weekPicks);
-            });
-
-            updateExistingWeeksDisplay();
+            }
+            updateUploadText();
         }
 
-        function showDashboard() {
-            document.getElementById('upload-screen').style.display = 'none';
-            document.getElementById('dashboard-screen').style.display = 'block';
-            renderDashboard();
+        function updateUploadText() {
+            const nextWeek = seasonData.weeks.length + 1;
+            document.getElementById('upload-text').textContent = `Drop Week ${nextWeek} CSV file here`;
         }
 
-        function showUploadScreen() {
+        function showLoading() {
+            document.getElementById('upload-content').style.display = 'none';
+            document.getElementById('loading-content').style.display = 'block';
+        }
+
+        function hideLoading() {
+            document.getElementById('upload-content').style.display = 'block';
+            document.getElementById('loading-content').style.display = 'none';
+        }
+
+        function showError(message) {
+            document.getElementById('error-message').style.display = 'block';
+            document.getElementById('error-text').textContent = message;
+        }
+
+        function hideError() {
+            document.getElementById('error-message').style.display = 'none';
+        }
+
+        function addNewWeek() {
             document.getElementById('upload-screen').style.display = 'block';
             document.getElementById('dashboard-screen').style.display = 'none';
-            
-            // Check if commissioner login is needed
-            if (seasonData.weeks.length > 0 && !isCommissioner) {
-                checkCommissionerMode();
-            }
-            
-            fileInput.value = '';
+            document.getElementById('file-input').value = '';
             hideError();
             hideLoading();
         }
 
+        function viewDashboard() {
+            showDashboard();
+        }
+
         function showDashboard() {
-            // Always show dashboard, but disable upload functionality if not commissioner
             document.getElementById('upload-screen').style.display = 'none';
             document.getElementById('dashboard-screen').style.display = 'block';
-            
-            // Update header buttons based on commissioner status
-            const headerButtons = document.querySelector('#dashboard-screen .text-right');
-            if (isCommissioner) {
-                headerButtons.innerHTML = `
-                    <button 
-                        onclick="showUploadScreen()"
-                        class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors mr-2"
-                    >
-                        Add New Week
-                    </button>
-                    <button 
-                        onclick="logoutCommissioner()"
-                        class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors mr-2"
-                    >
-                        Logout
-                    </button>
-                    <button 
-                        onclick="exportData()"
-                        class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-                    >
-                        Export Data
-                    </button>
-                `;
-            } else {
-                headerButtons.innerHTML = `
-                    <button 
-                        onclick="showCommissionerLogin()"
-                        class="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition-colors mr-2"
-                    >
-                        Commissioner Login
-                    </button>
-                    <button 
-                        onclick="exportData()"
-                        class="px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 transition-colors"
-                    >
-                        Export Data
-                    </button>
-                `;
-            }
-            
             renderDashboard();
-        }
-
-        function showCommissionerLogin() {
-            showUploadScreen();
-        }
-
-        function resetSeason() {
-            if (!isCommissioner) {
-                alert('Only the commissioner can reset the season');
-                return;
-            }
-            
-            if (confirm('Are you sure you want to reset the entire season? This will delete all uploaded data.')) {
-                seasonData = { weeks: [], players: {}, games: {} };
-                localStorage.removeItem('cfb-season-data');
-                document.getElementById('existing-weeks').style.display = 'none';
-                updateUploadText();
-            }
-        }
-
-        function exportData() {
-            const dataStr = JSON.stringify(seasonData, null, 2);
-            const dataUri = 'data:application/json;charset=utf-8,'+ encodeURIComponent(dataStr);
-            
-            const exportFileDefaultName = `cfb-season-data-${new Date().toISOString().split('T')[0]}.json`;
-            
-            const linkElement = document.createElement('a');
-            linkElement.setAttribute('href', dataUri);
-            linkElement.setAttribute('download', exportFileDefaultName);
-            linkElement.click();
-        }
-
-        function showView(viewName) {
-            // Hide all views
-            ['season-total', 'weekly-breakdown', 'pick-analysis', 'pick-distribution'].forEach(view => {
-                document.getElementById(`${view}-view`).style.display = 'none';
-                document.getElementById(`nav-${view}`).classList.remove('active');
-            });
-
-            // Show selected view
-            document.getElementById(`${viewName}-view`).style.display = 'block';
-            document.getElementById(`nav-${viewName}`).classList.add('active');
-
-            // Render specific view content
-            switch(viewName) {
-                case 'season-total':
-                    renderSeasonTotal();
-                    break;
-                case 'weekly-breakdown':
-                    renderWeeklyBreakdown();
-                    break;
-                case 'pick-analysis':
-                    renderPickAnalysis();
-                    break;
-                case 'pick-distribution':
-                    renderPickDistribution();
-                    break;
-            }
-        }
-
-        function renderDashboard() {
-            const players = Object.values(seasonData.players);
-            const weeksCount = seasonData.weeks.length;
-
-            // Update season info
-            document.getElementById('season-info').textContent = 
-                `${weeksCount} weeks • ${players.length} players • ${Object.keys(seasonData.games).length} unique games`;
-
-            showView('season-total');
         }
 
         function renderDashboard() {
             const players = Object.values(seasonData.players || {});
             const weeksCount = (seasonData.weeks || []).length;
 
-            // Update season info
             document.getElementById('season-info').textContent = 
-                `${weeksCount} weeks • ${players.length} players • ${Object.keys(seasonData.games || {}).length} unique games`;
+                `${weeksCount} weeks • ${players.length} players`;
 
-            updateLastUpdated();
             showView('season-total');
+        }
+
+        function showView(viewName) {
+            // Hide all views
+            document.getElementById('season-total-view').style.display = 'none';
+            document.getElementById('weekly-breakdown-view').style.display = 'none';
+            
+            // Remove active class
+            document.getElementById('nav-season-total').classList.remove('active');
+            document.getElementById('nav-weekly').classList.remove('active');
+            
+            // Show selected view
+            document.getElementById(viewName + '-view').style.display = 'block';
+            document.getElementById('nav-' + viewName.replace('-breakdown', '')).classList.add('active');
+            
+            // Set button colors
+            document.querySelectorAll('.nav-button').forEach(btn => {
+                btn.className = 'nav-button px-4 py-2 rounded-lg bg-gray-100 hover:bg-gray-200 font-medium';
+            });
+            document.getElementById('nav-' + viewName.replace('-breakdown', '')).className = 
+                'nav-button px-4 py-2 rounded-lg bg-blue-600 text-white font-medium active';
+
+            if (viewName === 'season-total') {
+                renderSeasonTotal();
+            } else if (viewName === 'weekly-breakdown') {
+                renderWeeklyBreakdown();
+            }
         }
 
         function renderSeasonTotal() {
@@ -701,63 +530,51 @@
             document.getElementById('total-players').textContent = players.length;
             document.getElementById('season-avg').textContent = avgScore;
 
-            // Render season standings
+            // Render table
             const tableBody = document.getElementById('season-standings-table');
             tableBody.innerHTML = '';
 
             if (players.length === 0) {
-                const row = document.createElement('tr');
-                row.innerHTML = `
-                    <td colspan="6" class="px-6 py-8 text-center text-gray-500">
+                tableBody.innerHTML = `
+                    <tr><td colspan="5" class="px-6 py-8 text-center text-gray-500">
                         No season data available. Upload your first week to get started!
-                    </td>
+                    </td></tr>
                 `;
-                tableBody.appendChild(row);
                 return;
             }
 
             players.forEach((player, index) => {
                 const weeklyAvg = weeksCount > 0 ? ((player.totalPoints || 0) / weeksCount).toFixed(1) : 0;
-                const trend = getTrend(player.weeklyScores || []);
                 
                 const row = document.createElement('tr');
-                row.className = `hover:bg-gray-50 transition-colors ${index < 3 ? 'bg-gradient-to-r from-yellow-50 to-transparent' : ''}`;
+                row.className = `hover:bg-gray-50 ${index < 3 ? 'bg-yellow-50' : ''}`;
                 
                 row.innerHTML = `
-                    <td class="px-6 py-4 whitespace-nowrap">
-                        ${getRankDisplay(index + 1)}
+                    <td class="px-6 py-4">
+                        ${index === 0 ? '🏆' : index === 1 ? '🥈' : index === 2 ? '🥉' : (index + 1)}
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap">
+                    <td class="px-6 py-4">
                         <div class="flex items-center">
-                            <div class="w-8 h-8 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-sm">
-                                ${(player.name || 'Unknown').charAt(0).toUpperCase()}
+                            <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-sm">
+                                ${(player.name || 'U')[0].toUpperCase()}
                             </div>
-                            <div class="ml-3">
-                                <div class="text-sm font-medium text-gray-900">${player.name || 'Unknown'}</div>
-                            </div>
+                            <div class="ml-3 font-medium">${player.name || 'Unknown'}</div>
                         </div>
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-center">
-                        <div class="text-lg font-bold text-gray-900">${player.totalPoints || 0}</div>
+                    <td class="px-6 py-4 text-center">
+                        <div class="text-lg font-bold">${player.totalPoints || 0}</div>
                         ${index === 0 ? '<div class="text-xs text-yellow-600">LEADER</div>' : ''}
                     </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-center text-sm text-gray-600">
-                        ${weeksCount}
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-center">
-                        <div class="text-sm font-medium text-gray-900">${weeklyAvg}</div>
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap text-center">
-                        ${trend}
-                    </td>
+                    <td class="px-6 py-4 text-center">${weeksCount}</td>
+                    <td class="px-6 py-4 text-center font-medium">${weeklyAvg}</td>
                 `;
                 tableBody.appendChild(row);
             });
         }
 
         function renderWeeklyBreakdown() {
-            const players = Object.values(seasonData.players);
-            const weeksCount = seasonData.weeks.length;
+            const players = Object.values(seasonData.players || {});
+            const weeksCount = (seasonData.weeks || []).length;
             
             // Build header
             const header = document.getElementById('weekly-header');
@@ -771,7 +588,7 @@
             const tableBody = document.getElementById('weekly-breakdown-table');
             tableBody.innerHTML = '';
 
-            players.sort((a, b) => b.totalPoints - a.totalPoints);
+            players.sort((a, b) => (b.totalPoints || 0) - (a.totalPoints || 0));
 
             players.forEach((player, index) => {
                 const row = document.createElement('tr');
@@ -780,276 +597,45 @@
                 let rowHTML = `
                     <td class="px-4 py-3">
                         <div class="flex items-center">
-                            <div class="w-6 h-6 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-xs">
-                                ${player.name.charAt(0).toUpperCase()}
+                            <div class="w-6 h-6 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                                ${(player.name || 'U')[0].toUpperCase()}
                             </div>
-                            <div class="ml-2 text-sm font-medium text-gray-900">${player.name}</div>
+                            <div class="ml-2 font-medium">${player.name || 'Unknown'}</div>
                         </div>
                     </td>`;
 
-                // Add weekly scores
                 for (let i = 0; i < weeksCount; i++) {
-                    const score = player.weeklyScores[i] || '-';
-                    const isHighlight = score !== '-' && score >= Math.max(...players.map(p => p.weeklyScores[i] || 0));
-                    rowHTML += `<td class="px-3 py-3 text-center text-sm ${isHighlight && score !== '-' ? 'bg-green-100 font-bold text-green-800' : 'text-gray-600'}">${score}</td>`;
+                    const score = (player.weeklyScores && player.weeklyScores[i]) || '-';
+                    rowHTML += `<td class="px-3 py-3 text-center text-sm">${score}</td>`;
                 }
 
-                rowHTML += `<td class="px-4 py-3 text-center font-bold text-gray-900">${player.totalPoints}</td>`;
+                rowHTML += `<td class="px-4 py-3 text-center font-bold">${player.totalPoints || 0}</td>`;
                 
                 row.innerHTML = rowHTML;
                 tableBody.appendChild(row);
             });
         }
 
-        function renderPickAnalysis() {
-            const players = Object.values(seasonData.players);
-            const weeksCount = seasonData.weeks.length;
+        function resetAll() {
+            if (confirm('Are you sure you want to reset the entire season? This will delete all uploaded data.')) {
+                seasonData = { weeks: [], players: {}, games: {} };
+                localStorage.removeItem('cfb-season-data');
+                document.getElementById('existing-weeks').style.display = 'none';
+                updateUploadText();
+                console.log('Season reset completed');
+            }
+        }
+
+        function exportData() {
+            const dataStr = JSON.stringify(seasonData, null, 2);
+            const blob = new Blob([dataStr], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
             
-            const container = document.getElementById('heatmap-container');
-            container.innerHTML = '';
-
-            if (weeksCount === 0 || players.length === 0) {
-                container.innerHTML = '<p class="text-gray-500">Upload more weeks to see heatmap analysis</p>';
-                return;
-            }
-
-            // Create heatmap table
-            const table = document.createElement('table');
-            table.className = 'w-full text-sm border-collapse';
-
-            // Header
-            const header = document.createElement('tr');
-            header.innerHTML = '<th class="p-2 text-left font-medium text-gray-700 border">Player</th>';
-            for (let i = 1; i <= weeksCount; i++) {
-                header.innerHTML += `<th class="p-2 text-center font-medium text-gray-700 border">Week ${i}</th>`;
-            }
-            table.appendChild(header);
-
-            // Sort players by total points
-            players.sort((a, b) => b.totalPoints - a.totalPoints);
-
-            // Calculate max score for normalization
-            const allScores = players.flatMap(p => p.weeklyScores.filter(s => s !== undefined));
-            const maxScore = Math.max(...allScores);
-            const minScore = Math.min(...allScores);
-
-            players.forEach(player => {
-                const row = document.createElement('tr');
-                
-                let rowHTML = `
-                    <td class="p-2 font-medium text-gray-800 border bg-gray-50">
-                        <div class="flex items-center">
-                            <div class="w-5 h-5 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-xs font-bold mr-2">
-                                ${player.name.charAt(0).toUpperCase()}
-                            </div>
-                            ${player.name}
-                        </div>
-                    </td>`;
-
-                for (let i = 0; i < weeksCount; i++) {
-                    const score = player.weeklyScores[i];
-                    if (score !== undefined) {
-                        const intensity = ((score - minScore) / (maxScore - minScore)) * 100;
-                        const color = getHeatmapColor(intensity);
-                        rowHTML += `
-                            <td class="p-2 text-center border heatmap-cell" style="background-color: ${color}">
-                                <span class="font-bold text-white text-shadow">${score}</span>
-                            </td>`;
-                    } else {
-                        rowHTML += '<td class="p-2 text-center border bg-gray-200 text-gray-400">-</td>';
-                    }
-                }
-
-                row.innerHTML = rowHTML;
-                table.appendChild(row);
-            });
-
-            container.appendChild(table);
-
-            // Add legend
-            const legend = document.createElement('div');
-            legend.className = 'mt-4 flex items-center justify-center gap-4';
-            legend.innerHTML = `
-                <div class="flex items-center gap-2">
-                    <span class="text-sm text-gray-600">Performance:</span>
-                    <div class="flex items-center">
-                        <div class="w-4 h-4 bg-red-500 mr-1"></div>
-                        <span class="text-xs text-gray-500 mr-3">Low</span>
-                        <div class="w-4 h-4 bg-yellow-500 mr-1"></div>
-                        <span class="text-xs text-gray-500 mr-3">Med</span>
-                        <div class="w-4 h-4 bg-green-500 mr-1"></div>
-                        <span class="text-xs text-gray-500">High</span>
-                    </div>
-                </div>
-            `;
-            container.appendChild(legend);
+            const link = document.createElement('a');
+            link.href = url;
+            link.download = `cfb-season-data-${new Date().toISOString().split('T')[0]}.json`;
+            link.click();
         }
-
-        function renderPickDistribution() {
-            const games = Object.values(seasonData.games);
-            
-            // Popular picks
-            const popularContainer = document.getElementById('popular-picks-list');
-            popularContainer.innerHTML = '';
-
-            // Controversial picks
-            const controversialContainer = document.getElementById('controversial-picks-list');
-            controversialContainer.innerHTML = '';
-
-            if (games.length === 0) {
-                popularContainer.innerHTML = '<p class="text-gray-500">Upload more weeks to see pick distribution</p>';
-                controversialContainer.innerHTML = '<p class="text-gray-500">Upload more weeks to see controversial games</p>';
-                return;
-            }
-
-            // Analyze each game for consensus
-            const gameAnalysis = games.map(game => {
-                let totalPicks = 0;
-                const pickCounts = {};
-                
-                game.picks.forEach(weekPicks => {
-                    Object.values(weekPicks).forEach(pick => {
-                        totalPicks++;
-                        pickCounts[pick] = (pickCounts[pick] || 0) + 1;
-                    });
-                });
-
-                const sortedPicks = Object.entries(pickCounts).sort((a, b) => b[1] - a[1]);
-                const topPick = sortedPicks[0];
-                const consensus = totalPicks > 0 ? (topPick[1] / totalPicks) * 100 : 0;
-
-                return {
-                    game: game.name,
-                    totalPicks,
-                    pickCounts,
-                    topPick: topPick ? topPick[0] : 'N/A',
-                    topPickCount: topPick ? topPick[1] : 0,
-                    consensus: consensus
-                };
-            });
-
-            // Most popular (highest consensus)
-            const popular = gameAnalysis
-                .filter(g => g.totalPicks > 0)
-                .sort((a, b) => b.consensus - a.consensus)
-                .slice(0, 10);
-
-            popular.forEach(game => {
-                const item = document.createElement('div');
-                item.className = 'mb-3 p-3 bg-gray-50 rounded-lg';
-                item.innerHTML = `
-                    <div class="font-semibold text-gray-800">${game.game}</div>
-                    <div class="text-sm text-gray-600">Popular pick: <span class="font-medium">${game.topPick}</span></div>
-                    <div class="text-xs text-gray-500">${game.topPickCount}/${game.totalPicks} picks (${game.consensus.toFixed(1)}% consensus)</div>
-                `;
-                popularContainer.appendChild(item);
-            });
-
-            // Most controversial (lowest consensus)
-            const controversial = gameAnalysis
-                .filter(g => g.totalPicks > 0)
-                .sort((a, b) => a.consensus - b.consensus)
-                .slice(0, 10);
-
-            controversial.forEach(game => {
-                const item = document.createElement('div');
-                item.className = 'mb-3 p-3 bg-gray-50 rounded-lg';
-                
-                const picksList = Object.entries(game.pickCounts)
-                    .sort((a, b) => b[1] - a[1])
-                    .map(([pick, count]) => `${pick} (${count})`)
-                    .join(', ');
-
-                item.innerHTML = `
-                    <div class="font-semibold text-gray-800">${game.game}</div>
-                    <div class="text-sm text-gray-600">Split decision: ${picksList}</div>
-                    <div class="text-xs text-gray-500">Only ${game.consensus.toFixed(1)}% consensus</div>
-                `;
-                controversialContainer.appendChild(item);
-            });
-
-            // Weekly consensus chart
-            const consensusContainer = document.getElementById('weekly-consensus-chart');
-            consensusContainer.innerHTML = '';
-
-            if (seasonData.weeks.length > 1) {
-                const chartDiv = document.createElement('div');
-                chartDiv.className = 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4';
-
-                seasonData.weeks.forEach((week, weekIndex) => {
-                    const weekCard = document.createElement('div');
-                    weekCard.className = 'bg-gray-50 rounded-lg p-4';
-                    
-                    let weekConsensus = 0;
-                    let gamesCount = 0;
-
-                    week.games.forEach(game => {
-                        const picks = week.players.map(p => p.picks[game.name]).filter(p => p);
-                        if (picks.length > 0) {
-                            const pickCounts = {};
-                            picks.forEach(pick => {
-                                pickCounts[pick] = (pickCounts[pick] || 0) + 1;
-                            });
-                            const maxPicks = Math.max(...Object.values(pickCounts));
-                            const gameConsensus = (maxPicks / picks.length) * 100;
-                            weekConsensus += gameConsensus;
-                            gamesCount++;
-                        }
-                    });
-
-                    const avgConsensus = gamesCount > 0 ? (weekConsensus / gamesCount).toFixed(1) : 0;
-
-                    weekCard.innerHTML = `
-                        <h4 class="font-semibold text-gray-800 mb-2">Week ${weekIndex + 1}</h4>
-                        <div class="text-2xl font-bold text-blue-600">${avgConsensus}%</div>
-                        <div class="text-sm text-gray-600">Avg Consensus</div>
-                        <div class="text-xs text-gray-500">${gamesCount} games</div>
-                    `;
-                    chartDiv.appendChild(weekCard);
-                });
-
-                consensusContainer.appendChild(chartDiv);
-            } else {
-                consensusContainer.innerHTML = '<p class="text-gray-500">Upload more weeks to see consensus trends</p>';
-            }
-        }
-
-        function getRankDisplay(rank) {
-            if (rank === 1) return '<span class="text-yellow-500 text-2xl">🏆</span>';
-            if (rank === 2) return '<span class="text-gray-400 text-2xl">🥈</span>';
-            if (rank === 3) return '<span class="text-orange-600 text-2xl">🥉</span>';
-            return `<span class="w-6 h-6 flex items-center justify-center text-gray-600 font-bold">${rank}</span>`;
-        }
-
-        function getTrend(weeklyScores) {
-            if (weeklyScores.length < 2) return '<span class="text-gray-400">-</span>';
-            
-            const recent = weeklyScores.slice(-3);
-            const isImproving = recent.length >= 2 && recent[recent.length - 1] > recent[0];
-            const isDeclining = recent.length >= 2 && recent[recent.length - 1] < recent[0];
-            
-            if (isImproving) return '<span class="text-green-500">📈</span>';
-            if (isDeclining) return '<span class="text-red-500">📉</span>';
-            return '<span class="text-gray-400">➡️</span>';
-        }
-
-        function getHeatmapColor(intensity) {
-            // Convert intensity (0-100) to color
-            if (intensity >= 80) return '#10b981'; // Green
-            if (intensity >= 60) return '#f59e0b'; // Yellow
-            if (intensity >= 40) return '#f97316'; // Orange
-            if (intensity >= 20) return '#ef4444'; // Red
-            return '#6b7280'; // Gray
-        }
-
-        // Add CSS for text shadow
-        const style = document.createElement('style');
-        style.textContent = `
-            .text-shadow {
-                text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
-            }
-        `;
-        document.head.appendChild(style);
     </script>
 </body>
 </html>

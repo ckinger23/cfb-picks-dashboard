@@ -47,55 +47,14 @@
                         <h1 class="text-3xl font-bold text-gray-800 mb-2">
                             College Football Season Dashboard
                         </h1>
-                                                    <p class="text-gray-600">Track picks, standings, and analytics across the entire season</p>
-                    </div>
-
-                    <!-- Commissioner Login -->
-                    <div id="commissioner-login" style="display: none;" class="mb-6">
-                        <div class="bg-yellow-50 border border-yellow-200 rounded-lg p-4">
-                            <h3 class="text-lg font-semibold text-yellow-800 mb-3">Commissioner Access Required</h3>
-                            <div class="flex flex-col sm:flex-row gap-2">
-                                <input 
-                                    type="password" 
-                                    id="commissioner-password" 
-                                    placeholder="Enter commissioner password"
-                                    class="flex-1 px-3 py-2 border border-yellow-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-yellow-500"
-                                    onkeypress="if(event.key==='Enter') checkCommissionerPassword()"
-                                />
-                                <button 
-                                    onclick="checkCommissionerPassword()"
-                                    class="px-4 py-2 bg-yellow-600 text-white rounded-lg hover:bg-yellow-700 transition-colors"
-                                >
-                                    Login
-                                </button>
-                            </div>
-                            <p class="text-sm text-yellow-700 mt-2">Only the commissioner can upload/manage week data</p>
-                        </div>
+                        <p class="text-gray-600">Track picks, standings, and analytics across the entire season</p>
                     </div>
 
                     <!-- Existing Weeks Display -->
                     <div id="existing-weeks" class="mb-6" style="display: none;">
                         <h3 class="text-lg font-semibold text-gray-800 mb-3">Current Season Data:</h3>
                         <div id="weeks-list" class="grid grid-cols-2 md:grid-cols-4 gap-2 mb-4"></div>
-                        <div class="flex flex-col sm:flex-row gap-2 justify-center">
-                            <button onclick="showWeekManager()" class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors">
-                                Manage Weeks
-                            </button>
-                            <button onclick="resetSeason()" class="px-4 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors">
-                                Reset Season
-                            </button>
-                        </div>
-                    </div>
-
-                    <!-- Week Manager Modal -->
-                    <div id="week-manager" style="display: none;" class="mb-6">
-                        <div class="bg-blue-50 border border-blue-200 rounded-lg p-4">
-                            <h3 class="text-lg font-semibold text-blue-800 mb-3">Week Manager</h3>
-                            <div id="week-manager-list" class="space-y-2 mb-4"></div>
-                            <button onclick="hideWeekManager()" class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors">
-                                Close
-                            </button>
-                        </div>
+                        <button onclick="resetSeason()" class="text-red-600 hover:text-red-800 text-sm">Reset Entire Season</button>
                     </div>
 
                     <div 
@@ -166,12 +125,6 @@
                                 class="px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors mr-2"
                             >
                                 Add New Week
-                            </button>
-                            <button 
-                                onclick="logoutCommissioner()"
-                                class="px-4 py-2 bg-gray-600 text-white rounded-lg hover:bg-gray-700 transition-colors mr-2"
-                            >
-                                Logout
                             </button>
                             <button 
                                 onclick="exportData()"
@@ -335,9 +288,6 @@
             games: {}
         };
 
-        let isCommissioner = false;
-        const COMMISSIONER_PASSWORD = "CFB2025"; // Change this to your desired password
-
         // Load saved data on page load
         window.addEventListener('load', () => {
             const savedData = localStorage.getItem('cfb-season-data');
@@ -345,72 +295,10 @@
                 seasonData = JSON.parse(savedData);
                 if (seasonData.weeks.length > 0) {
                     updateExistingWeeksDisplay();
-                    checkCommissionerMode();
-                    if (isCommissioner) {
-                        showDashboard();
-                    }
-                    return;
-                }
-            }
-            checkCommissionerMode();
-        });
-
-        function checkCommissionerMode() {
-            // Check if commissioner access is needed
-            const savedCommissionerMode = localStorage.getItem('cfb-commissioner-mode');
-            
-            if (seasonData.weeks.length > 0 || savedCommissionerMode === 'true') {
-                isCommissioner = savedCommissionerMode === 'true';
-                if (!isCommissioner) {
-                    document.getElementById('commissioner-login').style.display = 'block';
-                    document.getElementById('drop-zone').style.display = 'none';
-                    return false;
-                }
-            } else {
-                // First time setup - allow upload without password
-                isCommissioner = true;
-                localStorage.setItem('cfb-commissioner-mode', 'true');
-            }
-            
-            document.getElementById('commissioner-login').style.display = 'none';
-            document.getElementById('drop-zone').style.display = 'block';
-            return true;
-        }
-
-        function checkCommissionerPassword() {
-            const password = document.getElementById('commissioner-password').value;
-            if (password === COMMISSIONER_PASSWORD) {
-                isCommissioner = true;
-                localStorage.setItem('cfb-commissioner-mode', 'true');
-                document.getElementById('commissioner-login').style.display = 'none';
-                document.getElementById('drop-zone').style.display = 'block';
-                document.getElementById('commissioner-password').value = '';
-                
-                // If we have data, show dashboard, otherwise stay on upload screen
-                if (seasonData.weeks.length > 0) {
                     showDashboard();
                 }
-            } else {
-                alert('Incorrect commissioner password');
-                document.getElementById('commissioner-password').value = '';
             }
-        }
-
-        function logoutCommissioner() {
-            if (!confirm('Are you sure you want to logout as commissioner?')) {
-                return;
-            }
-            isCommissioner = false;
-            localStorage.removeItem('cfb-commissioner-mode');
-            
-            // If there's season data, go to dashboard in view-only mode
-            if (seasonData.weeks.length > 0) {
-                showDashboard();
-            } else {
-                // No data, show upload screen with login prompt
-                showUploadScreen();
-            }
-        }
+        });
 
         // Save data to localStorage
         function saveData() {
@@ -490,11 +378,6 @@
         }
 
         function handleFileUpload(file) {
-            if (!isCommissioner) {
-                showError('Only the commissioner can upload files. Please login first.');
-                return;
-            }
-
             if (!file.name.toLowerCase().endsWith('.csv')) {
                 showError('Please upload a CSV file');
                 return;
@@ -508,22 +391,7 @@
                 try {
                     const csvText = e.target.result;
                     const weekData = processCSVData(csvText);
-                    
-                    // Check if this week already exists
-                    const weekNumber = getWeekNumber(file.name) || seasonData.weeks.length + 1;
-                    const existingWeekIndex = weekNumber - 1;
-                    
-                    if (existingWeekIndex < seasonData.weeks.length) {
-                        if (confirm(`Week ${weekNumber} already exists. Do you want to replace it?`)) {
-                            replaceWeek(existingWeekIndex, weekData);
-                        } else {
-                            hideLoading();
-                            return;
-                        }
-                    } else {
-                        addWeekToSeason(weekData);
-                    }
-                    
+                    addWeekToSeason(weekData);
                     saveData();
                     showDashboard();
                     hideLoading();
@@ -666,146 +534,6 @@
             });
 
             updateExistingWeeksDisplay();
-        }
-
-        function getWeekNumber(filename) {
-            // Try to extract week number from filename (e.g., "Week 3 Responses.csv" -> 3)
-            const match = filename.match(/week\s*(\d+)/i);
-            return match ? parseInt(match[1]) : null;
-        }
-
-        function replaceWeek(weekIndex, newWeekData) {
-            // Remove old week data from season totals
-            const oldWeekData = seasonData.weeks[weekIndex];
-            oldWeekData.players.forEach(player => {
-                if (seasonData.players[player.name]) {
-                    seasonData.players[player.name].weeklyScores[weekIndex] = undefined;
-                    seasonData.players[player.name].totalPoints -= player.totalPoints;
-                    seasonData.players[player.name].totalGames -= player.gamesPlayed;
-                }
-            });
-
-            // Replace week data
-            seasonData.weeks[weekIndex] = newWeekData;
-
-            // Add new week data to season totals
-            newWeekData.players.forEach(player => {
-                if (!seasonData.players[player.name]) {
-                    seasonData.players[player.name] = {
-                        name: player.name,
-                        email: player.email,
-                        weeklyScores: [],
-                        totalPoints: 0,
-                        totalGames: 0,
-                        picks: {}
-                    };
-                }
-                
-                seasonData.players[player.name].weeklyScores[weekIndex] = player.totalPoints;
-                seasonData.players[player.name].totalPoints += player.totalPoints;
-                seasonData.players[player.name].totalGames += player.gamesPlayed;
-            });
-
-            updateExistingWeeksDisplay();
-        }
-
-        function deleteWeek(weekIndex) {
-            if (!confirm(`Are you sure you want to delete Week ${weekIndex + 1}? This cannot be undone.`)) {
-                return;
-            }
-
-            // Remove week data from season totals
-            const weekData = seasonData.weeks[weekIndex];
-            weekData.players.forEach(player => {
-                if (seasonData.players[player.name]) {
-                    seasonData.players[player.name].totalPoints -= player.totalPoints;
-                    seasonData.players[player.name].totalGames -= player.gamesPlayed;
-                }
-            });
-
-            // Remove week from array
-            seasonData.weeks.splice(weekIndex, 1);
-
-            // Rebuild all player weekly scores to fix indices
-            Object.values(seasonData.players).forEach(player => {
-                player.weeklyScores = [];
-                player.totalPoints = 0;
-                player.totalGames = 0;
-            });
-
-            seasonData.weeks.forEach((week, index) => {
-                week.players.forEach(player => {
-                    if (seasonData.players[player.name]) {
-                        seasonData.players[player.name].weeklyScores[index] = player.totalPoints;
-                        seasonData.players[player.name].totalPoints += player.totalPoints;
-                        seasonData.players[player.name].totalGames += player.gamesPlayed;
-                    }
-                });
-            });
-
-            saveData();
-            updateExistingWeeksDisplay();
-            hideWeekManager();
-            
-            if (seasonData.weeks.length === 0) {
-                showUploadScreen();
-            }
-        }
-
-        function showWeekManager() {
-            document.getElementById('week-manager').style.display = 'block';
-            const list = document.getElementById('week-manager-list');
-            list.innerHTML = '';
-
-            seasonData.weeks.forEach((week, index) => {
-                const weekItem = document.createElement('div');
-                weekItem.className = 'flex items-center justify-between bg-white p-3 rounded border';
-                weekItem.innerHTML = `
-                    <div>
-                        <span class="font-medium">Week ${index + 1}</span>
-                        <span class="text-gray-500 text-sm ml-2">(${week.players.length} players)</span>
-                    </div>
-                    <div class="flex gap-2">
-                        <button onclick="replaceWeekPrompt(${index})" class="px-3 py-1 bg-yellow-600 text-white rounded text-sm hover:bg-yellow-700">
-                            Replace
-                        </button>
-                        <button onclick="deleteWeek(${index})" class="px-3 py-1 bg-red-600 text-white rounded text-sm hover:bg-red-700">
-                            Delete
-                        </button>
-                    </div>
-                `;
-                list.appendChild(weekItem);
-            });
-        }
-
-        function hideWeekManager() {
-            document.getElementById('week-manager').style.display = 'none';
-        }
-
-        function replaceWeekPrompt(weekIndex) {
-            const input = document.createElement('input');
-            input.type = 'file';
-            input.accept = '.csv';
-            input.onchange = function(e) {
-                if (e.target.files.length > 0) {
-                    const file = e.target.files[0];
-                    const reader = new FileReader();
-                    reader.onload = function(event) {
-                        try {
-                            const csvText = event.target.result;
-                            const weekData = processCSVData(csvText);
-                            replaceWeek(weekIndex, weekData);
-                            saveData();
-                            hideWeekManager();
-                            renderDashboard();
-                        } catch (err) {
-                            alert('Failed to process CSV: ' + err.message);
-                        }
-                    };
-                    reader.readAsText(file);
-                }
-            };
-            input.click();
         }
 
         function showDashboard() {

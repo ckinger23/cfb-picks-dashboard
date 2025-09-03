@@ -1,1 +1,1502 @@
-
+{
+  "weeks": [
+    {
+      "players": [
+        {
+          "name": "calmasterson11",
+          "email": "calmasterson11@gmail.com",
+          "totalPoints": 22,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Auburn",
+            "Georgia Tech at Colorado": "Colorado",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Tennessee",
+            "App State at Charlotte": "App State",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Alabama",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Fresno State",
+            "California at Oregon State": "Oregon State",
+            "Utah at UCLA": "Utah",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "South Carolina",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "jcdayton6",
+          "email": "jcdayton6@gmail.com",
+          "totalPoints": 21,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Miami (OH)",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Auburn",
+            "Georgia Tech at Colorado": "Georgia Tech",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Syracuse",
+            "App State at Charlotte": "Charlotte",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Florida State",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Fresno State",
+            "California at Oregon State": "California",
+            "Utah at UCLA": "Utah",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "South Carolina",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "jack.zager1",
+          "email": "jack.zager1@gmail.com",
+          "totalPoints": 20,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Auburn",
+            "Georgia Tech at Colorado": "Colorado",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Tennessee",
+            "App State at Charlotte": "Charlotte",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Toledo",
+            "Alabama at Florida State": "Alabama",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Fresno State",
+            "California at Oregon State": "California",
+            "Utah at UCLA": "Utah",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "Miami",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "cartersk23",
+          "email": "cartersk23@gmail.com",
+          "totalPoints": 20,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Baylor",
+            "Georgia Tech at Colorado": "Georgia Tech",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Syracuse",
+            "App State at Charlotte": "Charlotte",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Alabama",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Fresno State",
+            "California at Oregon State": "Oregon State",
+            "Utah at UCLA": "Utah",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "Miami",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "jcmargraff",
+          "email": "jcmargraff@gmail.com",
+          "totalPoints": 20,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Auburn",
+            "Georgia Tech at Colorado": "Georgia Tech",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Syracuse",
+            "App State at Charlotte": "App State",
+            "Northwestern at Tulane": "Northwestern",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Alabama",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Georgia Southern",
+            "California at Oregon State": "Oregon State",
+            "Utah at UCLA": "Utah",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "Miami",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "nickwilliams957",
+          "email": "nickwilliams957@gmail.com",
+          "totalPoints": 20,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Baylor",
+            "Georgia Tech at Colorado": "Georgia Tech",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Tennessee",
+            "App State at Charlotte": "App State",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Alabama",
+            "LSU at Clemson": "LSU",
+            "Georgia Southern at Fresno State": "Georgia Southern",
+            "California at Oregon State": "Oregon State",
+            "Utah at UCLA": "UCLA",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "Miami",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "paulgiacomo273",
+          "email": "paulgiacomo273@gmail.com",
+          "totalPoints": 19,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Baylor",
+            "Georgia Tech at Colorado": "Georgia Tech",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Tennessee",
+            "App State at Charlotte": "App State",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Alabama",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Georgia Southern",
+            "California at Oregon State": "Oregon State",
+            "Utah at UCLA": "Utah",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "South Carolina",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "bradyvols15",
+          "email": "bradyvols15@gmail.com",
+          "totalPoints": 19,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Miami (OH)",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Baylor",
+            "Georgia Tech at Colorado": "Colorado",
+            "Texas at Ohio State": "Over",
+            "Syracuse at Tennessee": "Tennessee",
+            "App State at Charlotte": "Charlotte",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Florida State",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Fresno State",
+            "California at Oregon State": "California",
+            "Utah at UCLA": "UCLA",
+            "South Carolina at Virginia Tech": "Virginia Tech",
+            "Notre Dame at Miami": "Miami",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "srohl42",
+          "email": "srohl42@gmail.com",
+          "totalPoints": 18,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "Boise State",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Auburn",
+            "Georgia Tech at Colorado": "Georgia Tech",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Tennessee",
+            "App State at Charlotte": "Charlotte",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Alabama",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Georgia Southern",
+            "California at Oregon State": "Oregon State",
+            "Utah at UCLA": "UCLA",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "South Carolina",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "nathan.mirochnick31",
+          "email": "nathan.mirochnick31@gmail.com",
+          "totalPoints": 18,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "South Florida",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Nebraska",
+            "Auburn at Baylor": "Auburn",
+            "Georgia Tech at Colorado": "Georgia Tech",
+            "Texas at Ohio State": "Over",
+            "Syracuse at Tennessee": "Tennessee",
+            "App State at Charlotte": "App State",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Alabama",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Georgia Southern",
+            "California at Oregon State": "Oregon State",
+            "Utah at UCLA": "Utah",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "Miami",
+            "TCU at North Carolina": "North Carolina"
+          }
+        },
+        {
+          "name": "alexgarrett00",
+          "email": "alexgarrett00@gmail.com",
+          "totalPoints": 16,
+          "gamesPlayed": 19,
+          "picks": {
+            "Boise State at South Florida": "Boise State",
+            "Miami": "Wisconsin",
+            "Nebraska at Cincinnati": "Cincinnati",
+            "Auburn at Baylor": "Baylor",
+            "Georgia Tech at Colorado": "Colorado",
+            "Texas at Ohio State": "Under",
+            "Syracuse at Tennessee": "Syracuse",
+            "App State at Charlotte": "Charlotte",
+            "Northwestern at Tulane": "Tulane",
+            "Toledo at Kentucky": "Kentucky",
+            "Alabama at Florida State": "Florida State",
+            "LSU at Clemson": "Clemson",
+            "Georgia Southern at Fresno State": "Fresno State",
+            "California at Oregon State": "California",
+            "Utah at UCLA": "UCLA",
+            "South Carolina at Virginia Tech": "South Carolina",
+            "Notre Dame at Miami": "Miami",
+            "TCU at North Carolina": "TCU"
+          }
+        }
+      ],
+      "games": [
+        {
+          "name": "Boise State at South Florida",
+          "type": "spread",
+          "column": "Boise State at South Florida (+ 6.5)"
+        },
+        {
+          "name": "Miami",
+          "type": "spread",
+          "column": "Miami (OH) at Wisconsin ( - 17.5 )"
+        },
+        {
+          "name": "Nebraska at Cincinnati",
+          "type": "spread",
+          "column": "Nebraska at Cincinnati ( + 6.5 )"
+        },
+        {
+          "name": "Auburn at Baylor",
+          "type": "spread",
+          "column": "Auburn at Baylor ( + 2.5 )"
+        },
+        {
+          "name": "Georgia Tech at Colorado",
+          "type": "spread",
+          "column": "Georgia Tech at Colorado ( + 4.5 )"
+        },
+        {
+          "name": "Texas at Ohio State",
+          "type": "spread",
+          "column": "Texas at Ohio State ( - 2.5 )\nCollege Gameday - 2 pts"
+        },
+        {
+          "name": "Texas at Ohio State",
+          "type": "spread",
+          "column": "Texas at Ohio State ( 47.5 )\nCollege Gameday - 2 pts"
+        },
+        {
+          "name": "Syracuse at Tennessee",
+          "type": "spread",
+          "column": "Syracuse at Tennessee ( - 13.5 )"
+        },
+        {
+          "name": "App State at Charlotte",
+          "type": "spread",
+          "column": "App State at Charlotte ( + 6.5 )"
+        },
+        {
+          "name": "Northwestern at Tulane",
+          "type": "spread",
+          "column": "Northwestern at Tulane ( - 5.5 )"
+        },
+        {
+          "name": "Toledo at Kentucky",
+          "type": "spread",
+          "column": "Toledo at Kentucky ( - 7.5 )"
+        },
+        {
+          "name": "Alabama at Florida State",
+          "type": "spread",
+          "column": "Alabama at Florida State ( + 13.5 )"
+        },
+        {
+          "name": "LSU at Clemson",
+          "type": "spread",
+          "column": "LSU at Clemson ( - 3.5 )"
+        },
+        {
+          "name": "Georgia Southern at Fresno State",
+          "type": "spread",
+          "column": "Georgia Southern at Fresno State ( + 1.5 )"
+        },
+        {
+          "name": "California at Oregon State",
+          "type": "spread",
+          "column": "California at Oregon State ( - 2.5 )"
+        },
+        {
+          "name": "Utah at UCLA",
+          "type": "spread",
+          "column": "Utah at UCLA ( + 6.5 )"
+        },
+        {
+          "name": "South Carolina at Virginia Tech",
+          "type": "spread",
+          "column": "South Carolina at Virginia Tech ( + 7.5 )"
+        },
+        {
+          "name": "Notre Dame at Miami",
+          "type": "spread",
+          "column": "Notre Dame at Miami ( + 2.5 )"
+        },
+        {
+          "name": "TCU at North Carolina",
+          "type": "spread",
+          "column": "TCU at North Carolina ( + 3.5 )"
+        }
+      ]
+    }
+  ],
+  "players": {
+    "calmasterson11": {
+      "name": "calmasterson11",
+      "email": "calmasterson11@gmail.com",
+      "weeklyScores": [
+        22
+      ],
+      "totalPoints": 22,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Auburn"
+        ],
+        "Georgia Tech at Colorado": [
+          "Colorado"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Tennessee"
+        ],
+        "App State at Charlotte": [
+          "App State"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Alabama"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Fresno State"
+        ],
+        "California at Oregon State": [
+          "Oregon State"
+        ],
+        "Utah at UCLA": [
+          "Utah"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "South Carolina"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "jcdayton6": {
+      "name": "jcdayton6",
+      "email": "jcdayton6@gmail.com",
+      "weeklyScores": [
+        21
+      ],
+      "totalPoints": 21,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Miami (OH)"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Auburn"
+        ],
+        "Georgia Tech at Colorado": [
+          "Georgia Tech"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Syracuse"
+        ],
+        "App State at Charlotte": [
+          "Charlotte"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Florida State"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Fresno State"
+        ],
+        "California at Oregon State": [
+          "California"
+        ],
+        "Utah at UCLA": [
+          "Utah"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "South Carolina"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "jack.zager1": {
+      "name": "jack.zager1",
+      "email": "jack.zager1@gmail.com",
+      "weeklyScores": [
+        20
+      ],
+      "totalPoints": 20,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Auburn"
+        ],
+        "Georgia Tech at Colorado": [
+          "Colorado"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Tennessee"
+        ],
+        "App State at Charlotte": [
+          "Charlotte"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Toledo"
+        ],
+        "Alabama at Florida State": [
+          "Alabama"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Fresno State"
+        ],
+        "California at Oregon State": [
+          "California"
+        ],
+        "Utah at UCLA": [
+          "Utah"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "Miami"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "cartersk23": {
+      "name": "cartersk23",
+      "email": "cartersk23@gmail.com",
+      "weeklyScores": [
+        20
+      ],
+      "totalPoints": 20,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Baylor"
+        ],
+        "Georgia Tech at Colorado": [
+          "Georgia Tech"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Syracuse"
+        ],
+        "App State at Charlotte": [
+          "Charlotte"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Alabama"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Fresno State"
+        ],
+        "California at Oregon State": [
+          "Oregon State"
+        ],
+        "Utah at UCLA": [
+          "Utah"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "Miami"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "jcmargraff": {
+      "name": "jcmargraff",
+      "email": "jcmargraff@gmail.com",
+      "weeklyScores": [
+        20
+      ],
+      "totalPoints": 20,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Auburn"
+        ],
+        "Georgia Tech at Colorado": [
+          "Georgia Tech"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Syracuse"
+        ],
+        "App State at Charlotte": [
+          "App State"
+        ],
+        "Northwestern at Tulane": [
+          "Northwestern"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Alabama"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Georgia Southern"
+        ],
+        "California at Oregon State": [
+          "Oregon State"
+        ],
+        "Utah at UCLA": [
+          "Utah"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "Miami"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "nickwilliams957": {
+      "name": "nickwilliams957",
+      "email": "nickwilliams957@gmail.com",
+      "weeklyScores": [
+        20
+      ],
+      "totalPoints": 20,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Baylor"
+        ],
+        "Georgia Tech at Colorado": [
+          "Georgia Tech"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Tennessee"
+        ],
+        "App State at Charlotte": [
+          "App State"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Alabama"
+        ],
+        "LSU at Clemson": [
+          "LSU"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Georgia Southern"
+        ],
+        "California at Oregon State": [
+          "Oregon State"
+        ],
+        "Utah at UCLA": [
+          "UCLA"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "Miami"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "paulgiacomo273": {
+      "name": "paulgiacomo273",
+      "email": "paulgiacomo273@gmail.com",
+      "weeklyScores": [
+        19
+      ],
+      "totalPoints": 19,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Baylor"
+        ],
+        "Georgia Tech at Colorado": [
+          "Georgia Tech"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Tennessee"
+        ],
+        "App State at Charlotte": [
+          "App State"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Alabama"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Georgia Southern"
+        ],
+        "California at Oregon State": [
+          "Oregon State"
+        ],
+        "Utah at UCLA": [
+          "Utah"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "South Carolina"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "bradyvols15": {
+      "name": "bradyvols15",
+      "email": "bradyvols15@gmail.com",
+      "weeklyScores": [
+        19
+      ],
+      "totalPoints": 19,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Miami (OH)"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Baylor"
+        ],
+        "Georgia Tech at Colorado": [
+          "Colorado"
+        ],
+        "Texas at Ohio State": [
+          "Over"
+        ],
+        "Syracuse at Tennessee": [
+          "Tennessee"
+        ],
+        "App State at Charlotte": [
+          "Charlotte"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Florida State"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Fresno State"
+        ],
+        "California at Oregon State": [
+          "California"
+        ],
+        "Utah at UCLA": [
+          "UCLA"
+        ],
+        "South Carolina at Virginia Tech": [
+          "Virginia Tech"
+        ],
+        "Notre Dame at Miami": [
+          "Miami"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "srohl42": {
+      "name": "srohl42",
+      "email": "srohl42@gmail.com",
+      "weeklyScores": [
+        18
+      ],
+      "totalPoints": 18,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "Boise State"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Auburn"
+        ],
+        "Georgia Tech at Colorado": [
+          "Georgia Tech"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Tennessee"
+        ],
+        "App State at Charlotte": [
+          "Charlotte"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Alabama"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Georgia Southern"
+        ],
+        "California at Oregon State": [
+          "Oregon State"
+        ],
+        "Utah at UCLA": [
+          "UCLA"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "South Carolina"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "nathan.mirochnick31": {
+      "name": "nathan.mirochnick31",
+      "email": "nathan.mirochnick31@gmail.com",
+      "weeklyScores": [
+        18
+      ],
+      "totalPoints": 18,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "South Florida"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Nebraska"
+        ],
+        "Auburn at Baylor": [
+          "Auburn"
+        ],
+        "Georgia Tech at Colorado": [
+          "Georgia Tech"
+        ],
+        "Texas at Ohio State": [
+          "Over"
+        ],
+        "Syracuse at Tennessee": [
+          "Tennessee"
+        ],
+        "App State at Charlotte": [
+          "App State"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Alabama"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Georgia Southern"
+        ],
+        "California at Oregon State": [
+          "Oregon State"
+        ],
+        "Utah at UCLA": [
+          "Utah"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "Miami"
+        ],
+        "TCU at North Carolina": [
+          "North Carolina"
+        ]
+      }
+    },
+    "alexgarrett00": {
+      "name": "alexgarrett00",
+      "email": "alexgarrett00@gmail.com",
+      "weeklyScores": [
+        16
+      ],
+      "totalPoints": 16,
+      "totalGames": 19,
+      "picks": {
+        "Boise State at South Florida": [
+          "Boise State"
+        ],
+        "Miami": [
+          "Wisconsin"
+        ],
+        "Nebraska at Cincinnati": [
+          "Cincinnati"
+        ],
+        "Auburn at Baylor": [
+          "Baylor"
+        ],
+        "Georgia Tech at Colorado": [
+          "Colorado"
+        ],
+        "Texas at Ohio State": [
+          "Under"
+        ],
+        "Syracuse at Tennessee": [
+          "Syracuse"
+        ],
+        "App State at Charlotte": [
+          "Charlotte"
+        ],
+        "Northwestern at Tulane": [
+          "Tulane"
+        ],
+        "Toledo at Kentucky": [
+          "Kentucky"
+        ],
+        "Alabama at Florida State": [
+          "Florida State"
+        ],
+        "LSU at Clemson": [
+          "Clemson"
+        ],
+        "Georgia Southern at Fresno State": [
+          "Fresno State"
+        ],
+        "California at Oregon State": [
+          "California"
+        ],
+        "Utah at UCLA": [
+          "UCLA"
+        ],
+        "South Carolina at Virginia Tech": [
+          "South Carolina"
+        ],
+        "Notre Dame at Miami": [
+          "Miami"
+        ],
+        "TCU at North Carolina": [
+          "TCU"
+        ]
+      }
+    }
+  },
+  "games": {
+    "Boise State at South Florida": {
+      "name": "Boise State at South Florida",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "South Florida",
+          "jcdayton6": "South Florida",
+          "jack.zager1": "South Florida",
+          "cartersk23": "South Florida",
+          "jcmargraff": "South Florida",
+          "nickwilliams957": "South Florida",
+          "paulgiacomo273": "South Florida",
+          "bradyvols15": "South Florida",
+          "srohl42": "Boise State",
+          "nathan.mirochnick31": "South Florida",
+          "alexgarrett00": "Boise State"
+        }
+      ]
+    },
+    "Miami": {
+      "name": "Miami",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Wisconsin",
+          "jcdayton6": "Miami (OH)",
+          "jack.zager1": "Wisconsin",
+          "cartersk23": "Wisconsin",
+          "jcmargraff": "Wisconsin",
+          "nickwilliams957": "Wisconsin",
+          "paulgiacomo273": "Wisconsin",
+          "bradyvols15": "Miami (OH)",
+          "srohl42": "Wisconsin",
+          "nathan.mirochnick31": "Wisconsin",
+          "alexgarrett00": "Wisconsin"
+        }
+      ]
+    },
+    "Nebraska at Cincinnati": {
+      "name": "Nebraska at Cincinnati",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Nebraska",
+          "jcdayton6": "Nebraska",
+          "jack.zager1": "Nebraska",
+          "cartersk23": "Nebraska",
+          "jcmargraff": "Nebraska",
+          "nickwilliams957": "Nebraska",
+          "paulgiacomo273": "Nebraska",
+          "bradyvols15": "Nebraska",
+          "srohl42": "Nebraska",
+          "nathan.mirochnick31": "Nebraska",
+          "alexgarrett00": "Cincinnati"
+        }
+      ]
+    },
+    "Auburn at Baylor": {
+      "name": "Auburn at Baylor",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Auburn",
+          "jcdayton6": "Auburn",
+          "jack.zager1": "Auburn",
+          "cartersk23": "Baylor",
+          "jcmargraff": "Auburn",
+          "nickwilliams957": "Baylor",
+          "paulgiacomo273": "Baylor",
+          "bradyvols15": "Baylor",
+          "srohl42": "Auburn",
+          "nathan.mirochnick31": "Auburn",
+          "alexgarrett00": "Baylor"
+        }
+      ]
+    },
+    "Georgia Tech at Colorado": {
+      "name": "Georgia Tech at Colorado",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Colorado",
+          "jcdayton6": "Georgia Tech",
+          "jack.zager1": "Colorado",
+          "cartersk23": "Georgia Tech",
+          "jcmargraff": "Georgia Tech",
+          "nickwilliams957": "Georgia Tech",
+          "paulgiacomo273": "Georgia Tech",
+          "bradyvols15": "Colorado",
+          "srohl42": "Georgia Tech",
+          "nathan.mirochnick31": "Georgia Tech",
+          "alexgarrett00": "Colorado"
+        }
+      ]
+    },
+    "Texas at Ohio State": {
+      "name": "Texas at Ohio State",
+      "weeks": [
+        1,
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Under",
+          "jcdayton6": "Under",
+          "jack.zager1": "Under",
+          "cartersk23": "Under",
+          "jcmargraff": "Under",
+          "nickwilliams957": "Under",
+          "paulgiacomo273": "Under",
+          "bradyvols15": "Over",
+          "srohl42": "Under",
+          "nathan.mirochnick31": "Over",
+          "alexgarrett00": "Under"
+        },
+        {
+          "calmasterson11": "Under",
+          "jcdayton6": "Under",
+          "jack.zager1": "Under",
+          "cartersk23": "Under",
+          "jcmargraff": "Under",
+          "nickwilliams957": "Under",
+          "paulgiacomo273": "Under",
+          "bradyvols15": "Over",
+          "srohl42": "Under",
+          "nathan.mirochnick31": "Over",
+          "alexgarrett00": "Under"
+        }
+      ]
+    },
+    "Syracuse at Tennessee": {
+      "name": "Syracuse at Tennessee",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Tennessee",
+          "jcdayton6": "Syracuse",
+          "jack.zager1": "Tennessee",
+          "cartersk23": "Syracuse",
+          "jcmargraff": "Syracuse",
+          "nickwilliams957": "Tennessee",
+          "paulgiacomo273": "Tennessee",
+          "bradyvols15": "Tennessee",
+          "srohl42": "Tennessee",
+          "nathan.mirochnick31": "Tennessee",
+          "alexgarrett00": "Syracuse"
+        }
+      ]
+    },
+    "App State at Charlotte": {
+      "name": "App State at Charlotte",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "App State",
+          "jcdayton6": "Charlotte",
+          "jack.zager1": "Charlotte",
+          "cartersk23": "Charlotte",
+          "jcmargraff": "App State",
+          "nickwilliams957": "App State",
+          "paulgiacomo273": "App State",
+          "bradyvols15": "Charlotte",
+          "srohl42": "Charlotte",
+          "nathan.mirochnick31": "App State",
+          "alexgarrett00": "Charlotte"
+        }
+      ]
+    },
+    "Northwestern at Tulane": {
+      "name": "Northwestern at Tulane",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Tulane",
+          "jcdayton6": "Tulane",
+          "jack.zager1": "Tulane",
+          "cartersk23": "Tulane",
+          "jcmargraff": "Northwestern",
+          "nickwilliams957": "Tulane",
+          "paulgiacomo273": "Tulane",
+          "bradyvols15": "Tulane",
+          "srohl42": "Tulane",
+          "nathan.mirochnick31": "Tulane",
+          "alexgarrett00": "Tulane"
+        }
+      ]
+    },
+    "Toledo at Kentucky": {
+      "name": "Toledo at Kentucky",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Kentucky",
+          "jcdayton6": "Kentucky",
+          "jack.zager1": "Toledo",
+          "cartersk23": "Kentucky",
+          "jcmargraff": "Kentucky",
+          "nickwilliams957": "Kentucky",
+          "paulgiacomo273": "Kentucky",
+          "bradyvols15": "Kentucky",
+          "srohl42": "Kentucky",
+          "nathan.mirochnick31": "Kentucky",
+          "alexgarrett00": "Kentucky"
+        }
+      ]
+    },
+    "Alabama at Florida State": {
+      "name": "Alabama at Florida State",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Alabama",
+          "jcdayton6": "Florida State",
+          "jack.zager1": "Alabama",
+          "cartersk23": "Alabama",
+          "jcmargraff": "Alabama",
+          "nickwilliams957": "Alabama",
+          "paulgiacomo273": "Alabama",
+          "bradyvols15": "Florida State",
+          "srohl42": "Alabama",
+          "nathan.mirochnick31": "Alabama",
+          "alexgarrett00": "Florida State"
+        }
+      ]
+    },
+    "LSU at Clemson": {
+      "name": "LSU at Clemson",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Clemson",
+          "jcdayton6": "Clemson",
+          "jack.zager1": "Clemson",
+          "cartersk23": "Clemson",
+          "jcmargraff": "Clemson",
+          "nickwilliams957": "LSU",
+          "paulgiacomo273": "Clemson",
+          "bradyvols15": "Clemson",
+          "srohl42": "Clemson",
+          "nathan.mirochnick31": "Clemson",
+          "alexgarrett00": "Clemson"
+        }
+      ]
+    },
+    "Georgia Southern at Fresno State": {
+      "name": "Georgia Southern at Fresno State",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Fresno State",
+          "jcdayton6": "Fresno State",
+          "jack.zager1": "Fresno State",
+          "cartersk23": "Fresno State",
+          "jcmargraff": "Georgia Southern",
+          "nickwilliams957": "Georgia Southern",
+          "paulgiacomo273": "Georgia Southern",
+          "bradyvols15": "Fresno State",
+          "srohl42": "Georgia Southern",
+          "nathan.mirochnick31": "Georgia Southern",
+          "alexgarrett00": "Fresno State"
+        }
+      ]
+    },
+    "California at Oregon State": {
+      "name": "California at Oregon State",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Oregon State",
+          "jcdayton6": "California",
+          "jack.zager1": "California",
+          "cartersk23": "Oregon State",
+          "jcmargraff": "Oregon State",
+          "nickwilliams957": "Oregon State",
+          "paulgiacomo273": "Oregon State",
+          "bradyvols15": "California",
+          "srohl42": "Oregon State",
+          "nathan.mirochnick31": "Oregon State",
+          "alexgarrett00": "California"
+        }
+      ]
+    },
+    "Utah at UCLA": {
+      "name": "Utah at UCLA",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "Utah",
+          "jcdayton6": "Utah",
+          "jack.zager1": "Utah",
+          "cartersk23": "Utah",
+          "jcmargraff": "Utah",
+          "nickwilliams957": "UCLA",
+          "paulgiacomo273": "Utah",
+          "bradyvols15": "UCLA",
+          "srohl42": "UCLA",
+          "nathan.mirochnick31": "Utah",
+          "alexgarrett00": "UCLA"
+        }
+      ]
+    },
+    "South Carolina at Virginia Tech": {
+      "name": "South Carolina at Virginia Tech",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "South Carolina",
+          "jcdayton6": "South Carolina",
+          "jack.zager1": "South Carolina",
+          "cartersk23": "South Carolina",
+          "jcmargraff": "South Carolina",
+          "nickwilliams957": "South Carolina",
+          "paulgiacomo273": "South Carolina",
+          "bradyvols15": "Virginia Tech",
+          "srohl42": "South Carolina",
+          "nathan.mirochnick31": "South Carolina",
+          "alexgarrett00": "South Carolina"
+        }
+      ]
+    },
+    "Notre Dame at Miami": {
+      "name": "Notre Dame at Miami",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "South Carolina",
+          "jcdayton6": "South Carolina",
+          "jack.zager1": "Miami",
+          "cartersk23": "Miami",
+          "jcmargraff": "Miami",
+          "nickwilliams957": "Miami",
+          "paulgiacomo273": "South Carolina",
+          "bradyvols15": "Miami",
+          "srohl42": "South Carolina",
+          "nathan.mirochnick31": "Miami",
+          "alexgarrett00": "Miami"
+        }
+      ]
+    },
+    "TCU at North Carolina": {
+      "name": "TCU at North Carolina",
+      "weeks": [
+        1
+      ],
+      "picks": [
+        {
+          "calmasterson11": "North Carolina",
+          "jcdayton6": "North Carolina",
+          "jack.zager1": "North Carolina",
+          "cartersk23": "North Carolina",
+          "jcmargraff": "North Carolina",
+          "nickwilliams957": "North Carolina",
+          "paulgiacomo273": "North Carolina",
+          "bradyvols15": "North Carolina",
+          "srohl42": "North Carolina",
+          "nathan.mirochnick31": "North Carolina",
+          "alexgarrett00": "TCU"
+        }
+      ]
+    }
+  }
+}

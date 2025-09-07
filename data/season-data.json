@@ -386,6 +386,297 @@
           "column": "TCU at North Carolina ( + 3.5 )"
         }
       ]
+    },
+    {
+      "players": [
+        {
+          "name": "jcmargraff",
+          "email": "jcmargraff@gmail.com",
+          "totalPoints": 17,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Duke",
+            "Baylor at SMU": "Baylor",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Kentucky",
+            "Kansas at Missouri": "Missouri",
+            "Michigan at Oklahoma": "Over",
+            "South Florida at Florida": "Florida",
+            "Arizona State at Mississippi State": "Mississippi State",
+            "Vanderbilt at Virginia Tech": "Virginia Tech",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Boston College"
+          }
+        },
+        {
+          "name": "jcdayton6",
+          "email": "jcdayton6@gmail.com",
+          "totalPoints": 16,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Illinois",
+            "Baylor at SMU": "SMU",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Kentucky",
+            "Kansas at Missouri": "Missouri",
+            "Michigan at Oklahoma": "Under",
+            "South Florida at Florida": "Florida",
+            "Arizona State at Mississippi State": "Arizona State",
+            "Vanderbilt at Virginia Tech": "Vanderbilt",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Michigan State"
+          }
+        },
+        {
+          "name": "paulgiacomo273",
+          "email": "paulgiacomo273@gmail.com",
+          "totalPoints": 15,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Illinois",
+            "Baylor at SMU": "SMU",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Ole Miss",
+            "Kansas at Missouri": "Missouri",
+            "Michigan at Oklahoma": "Under",
+            "South Florida at Florida": "South Florida",
+            "Arizona State at Mississippi State": "Mississippi State",
+            "Vanderbilt at Virginia Tech": "Vanderbilt",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Michigan State"
+          }
+        },
+        {
+          "name": "alexgarrett00",
+          "email": "alexgarrett00@gmail.com",
+          "totalPoints": 15,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Illinois",
+            "Baylor at SMU": "SMU",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Kentucky",
+            "Kansas at Missouri": "Missouri",
+            "Michigan at Oklahoma": "Under",
+            "South Florida at Florida": "South Florida",
+            "Arizona State at Mississippi State": "Arizona State",
+            "Vanderbilt at Virginia Tech": "Vanderbilt",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Boston College"
+          }
+        },
+        {
+          "name": "srohl42",
+          "email": "srohl42@gmail.com",
+          "totalPoints": 14,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Illinois",
+            "Baylor at SMU": "SMU",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Ole Miss",
+            "Kansas at Missouri": "Kansas",
+            "Michigan at Oklahoma": "Under",
+            "South Florida at Florida": "Florida",
+            "Arizona State at Mississippi State": "Arizona State",
+            "Vanderbilt at Virginia Tech": "Virginia Tech",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Boston College"
+          }
+        },
+        {
+          "name": "nathan.mirochnick31",
+          "email": "nathan.mirochnick31@gmail.com",
+          "totalPoints": 13,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Illinois",
+            "Baylor at SMU": "Baylor",
+            "Iowa at Iowa State": "Iowa",
+            "Ole Miss at Kentucky": "Ole Miss",
+            "Kansas at Missouri": "Kansas",
+            "Michigan at Oklahoma": "Over",
+            "South Florida at Florida": "South Florida",
+            "Arizona State at Mississippi State": "Mississippi State",
+            "Vanderbilt at Virginia Tech": "Virginia Tech",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Michigan State"
+          }
+        },
+        {
+          "name": "nickwilliams957",
+          "email": "nickwilliams957@gmail.com",
+          "totalPoints": 13,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Illinois",
+            "Baylor at SMU": "Baylor",
+            "Iowa at Iowa State": "Iowa",
+            "Ole Miss at Kentucky": "Ole Miss",
+            "Kansas at Missouri": "Missouri",
+            "Michigan at Oklahoma": "Under",
+            "South Florida at Florida": "Florida",
+            "Arizona State at Mississippi State": "Arizona State",
+            "Vanderbilt at Virginia Tech": "Vanderbilt",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Michigan State"
+          }
+        },
+        {
+          "name": "bradyvols15",
+          "email": "bradyvols15@gmail.com",
+          "totalPoints": 13,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Illinois",
+            "Baylor at SMU": "SMU",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Kentucky",
+            "Kansas at Missouri": "Missouri",
+            "Michigan at Oklahoma": "Under",
+            "South Florida at Florida": "Florida",
+            "Arizona State at Mississippi State": "Mississippi State",
+            "Vanderbilt at Virginia Tech": "Virginia Tech",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Boston College"
+          }
+        },
+        {
+          "name": "cartersk23",
+          "email": "cartersk23@gmail.com",
+          "totalPoints": 12,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Duke",
+            "Baylor at SMU": "Baylor",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Ole Miss",
+            "Kansas at Missouri": "Kansas",
+            "Michigan at Oklahoma": "Under",
+            "South Florida at Florida": "Florida",
+            "Arizona State at Mississippi State": "Mississippi State",
+            "Vanderbilt at Virginia Tech": "Vanderbilt",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Michigan State"
+          }
+        },
+        {
+          "name": "calmasterson11",
+          "email": "calmasterson11@gmail.com",
+          "totalPoints": 11,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Duke",
+            "Baylor at SMU": "SMU",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Ole Miss",
+            "Kansas at Missouri": "Missouri",
+            "Michigan at Oklahoma": "Under",
+            "South Florida at Florida": "Florida",
+            "Arizona State at Mississippi State": "Arizona State",
+            "Vanderbilt at Virginia Tech": "Virginia Tech",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Boston College"
+          }
+        },
+        {
+          "name": "jack.zager1",
+          "email": "jack.zager1@gmail.com",
+          "totalPoints": 9,
+          "gamesPlayed": 13,
+          "picks": {
+            "Illinois at Duke": "Duke",
+            "Baylor at SMU": "SMU",
+            "Iowa at Iowa State": "Iowa State",
+            "Ole Miss at Kentucky": "Kentucky",
+            "Kansas at Missouri": "Kansas",
+            "Michigan at Oklahoma": "Over",
+            "South Florida at Florida": "South Florida",
+            "Arizona State at Mississippi State": "Arizona State",
+            "Vanderbilt at Virginia Tech": "Virginia Tech",
+            "Stanford at BYU": "BYU",
+            "Virginia at NC State": "NC State",
+            "Boston College at Michigan State": "Michigan State"
+          }
+        }
+      ],
+      "games": [
+        {
+          "name": "Illinois at Duke",
+          "type": "spread",
+          "column": "Illinois at Duke (+ 2.5)"
+        },
+        {
+          "name": "Baylor at SMU",
+          "type": "spread",
+          "column": "Baylor at SMU ( - 2.5 )"
+        },
+        {
+          "name": "Iowa at Iowa State",
+          "type": "spread",
+          "column": "Iowa at Iowa State ( - 2.5 )"
+        },
+        {
+          "name": "Ole Miss at Kentucky",
+          "type": "spread",
+          "column": "Ole Miss at Kentucky ( + 10.5 )"
+        },
+        {
+          "name": "Kansas at Missouri",
+          "type": "spread",
+          "column": "Kansas at Missouri ( - 6.5 )"
+        },
+        {
+          "name": "Michigan at Oklahoma",
+          "type": "spread",
+          "column": "Michigan at Oklahoma ( - 5.5 )\nCollege Gameday - 2 pts"
+        },
+        {
+          "name": "Michigan at Oklahoma",
+          "type": "spread",
+          "column": "Michigan at Oklahoma ( 45.5 )\nCollege Gameday - 2 pts"
+        },
+        {
+          "name": "South Florida at Florida",
+          "type": "spread",
+          "column": "South Florida at Florida ( - 17.5 )"
+        },
+        {
+          "name": "Arizona State at Mississippi State",
+          "type": "spread",
+          "column": "Arizona State at Mississippi State ( + 6.5 )"
+        },
+        {
+          "name": "Vanderbilt at Virginia Tech",
+          "type": "spread",
+          "column": "Vanderbilt at Virginia Tech ( - 1.5 )"
+        },
+        {
+          "name": "Stanford at BYU",
+          "type": "spread",
+          "column": "Stanford at BYU ( - 18.5 )"
+        },
+        {
+          "name": "Virginia at NC State",
+          "type": "spread",
+          "column": "Virginia at NC State ( - 2.5 )"
+        },
+        {
+          "name": "Boston College at Michigan State",
+          "type": "spread",
+          "column": "Boston College at Michigan State ( - 3.5 )"
+        }
+      ]
     }
   ],
   "players": {
@@ -393,10 +684,11 @@
       "name": "calmasterson11",
       "email": "calmasterson11@gmail.com",
       "weeklyScores": [
-        22
+        22,
+        11
       ],
-      "totalPoints": 22,
-      "totalGames": 19,
+      "totalPoints": 33,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -451,6 +743,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Duke"
+        ],
+        "Baylor at SMU": [
+          "SMU"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Ole Miss"
+        ],
+        "Kansas at Missouri": [
+          "Missouri"
+        ],
+        "Michigan at Oklahoma": [
+          "Under"
+        ],
+        "South Florida at Florida": [
+          "Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Arizona State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Virginia Tech"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Boston College"
         ]
       }
     },
@@ -458,10 +786,11 @@
       "name": "jcdayton6",
       "email": "jcdayton6@gmail.com",
       "weeklyScores": [
-        21
+        21,
+        16
       ],
-      "totalPoints": 21,
-      "totalGames": 19,
+      "totalPoints": 37,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -516,6 +845,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Illinois"
+        ],
+        "Baylor at SMU": [
+          "SMU"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Kentucky"
+        ],
+        "Kansas at Missouri": [
+          "Missouri"
+        ],
+        "Michigan at Oklahoma": [
+          "Under"
+        ],
+        "South Florida at Florida": [
+          "Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Arizona State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Vanderbilt"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Michigan State"
         ]
       }
     },
@@ -523,10 +888,11 @@
       "name": "jack.zager1",
       "email": "jack.zager1@gmail.com",
       "weeklyScores": [
-        20
+        20,
+        9
       ],
-      "totalPoints": 20,
-      "totalGames": 19,
+      "totalPoints": 29,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -581,6 +947,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Duke"
+        ],
+        "Baylor at SMU": [
+          "SMU"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Kentucky"
+        ],
+        "Kansas at Missouri": [
+          "Kansas"
+        ],
+        "Michigan at Oklahoma": [
+          "Over"
+        ],
+        "South Florida at Florida": [
+          "South Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Arizona State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Virginia Tech"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Michigan State"
         ]
       }
     },
@@ -588,10 +990,11 @@
       "name": "cartersk23",
       "email": "cartersk23@gmail.com",
       "weeklyScores": [
-        20
+        20,
+        12
       ],
-      "totalPoints": 20,
-      "totalGames": 19,
+      "totalPoints": 32,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -646,6 +1049,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Duke"
+        ],
+        "Baylor at SMU": [
+          "Baylor"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Ole Miss"
+        ],
+        "Kansas at Missouri": [
+          "Kansas"
+        ],
+        "Michigan at Oklahoma": [
+          "Under"
+        ],
+        "South Florida at Florida": [
+          "Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Vanderbilt"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Michigan State"
         ]
       }
     },
@@ -653,10 +1092,11 @@
       "name": "jcmargraff",
       "email": "jcmargraff@gmail.com",
       "weeklyScores": [
-        20
+        20,
+        17
       ],
-      "totalPoints": 20,
-      "totalGames": 19,
+      "totalPoints": 37,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -711,6 +1151,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Duke"
+        ],
+        "Baylor at SMU": [
+          "Baylor"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Kentucky"
+        ],
+        "Kansas at Missouri": [
+          "Missouri"
+        ],
+        "Michigan at Oklahoma": [
+          "Over"
+        ],
+        "South Florida at Florida": [
+          "Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Virginia Tech"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Boston College"
         ]
       }
     },
@@ -718,10 +1194,11 @@
       "name": "nickwilliams957",
       "email": "nickwilliams957@gmail.com",
       "weeklyScores": [
-        20
+        20,
+        13
       ],
-      "totalPoints": 20,
-      "totalGames": 19,
+      "totalPoints": 33,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -776,6 +1253,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Illinois"
+        ],
+        "Baylor at SMU": [
+          "Baylor"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa"
+        ],
+        "Ole Miss at Kentucky": [
+          "Ole Miss"
+        ],
+        "Kansas at Missouri": [
+          "Missouri"
+        ],
+        "Michigan at Oklahoma": [
+          "Under"
+        ],
+        "South Florida at Florida": [
+          "Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Arizona State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Vanderbilt"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Michigan State"
         ]
       }
     },
@@ -783,10 +1296,11 @@
       "name": "paulgiacomo273",
       "email": "paulgiacomo273@gmail.com",
       "weeklyScores": [
-        19
+        19,
+        15
       ],
-      "totalPoints": 19,
-      "totalGames": 19,
+      "totalPoints": 34,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -841,6 +1355,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Illinois"
+        ],
+        "Baylor at SMU": [
+          "SMU"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Ole Miss"
+        ],
+        "Kansas at Missouri": [
+          "Missouri"
+        ],
+        "Michigan at Oklahoma": [
+          "Under"
+        ],
+        "South Florida at Florida": [
+          "South Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Vanderbilt"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Michigan State"
         ]
       }
     },
@@ -848,10 +1398,11 @@
       "name": "bradyvols15",
       "email": "bradyvols15@gmail.com",
       "weeklyScores": [
-        19
+        19,
+        13
       ],
-      "totalPoints": 19,
-      "totalGames": 19,
+      "totalPoints": 32,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -906,6 +1457,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Illinois"
+        ],
+        "Baylor at SMU": [
+          "SMU"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Kentucky"
+        ],
+        "Kansas at Missouri": [
+          "Missouri"
+        ],
+        "Michigan at Oklahoma": [
+          "Under"
+        ],
+        "South Florida at Florida": [
+          "Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Virginia Tech"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Boston College"
         ]
       }
     },
@@ -913,10 +1500,11 @@
       "name": "srohl42",
       "email": "srohl42@gmail.com",
       "weeklyScores": [
-        18
+        18,
+        14
       ],
-      "totalPoints": 18,
-      "totalGames": 19,
+      "totalPoints": 32,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "Boise State"
@@ -971,6 +1559,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Illinois"
+        ],
+        "Baylor at SMU": [
+          "SMU"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Ole Miss"
+        ],
+        "Kansas at Missouri": [
+          "Kansas"
+        ],
+        "Michigan at Oklahoma": [
+          "Under"
+        ],
+        "South Florida at Florida": [
+          "Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Arizona State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Virginia Tech"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Boston College"
         ]
       }
     },
@@ -978,10 +1602,11 @@
       "name": "nathan.mirochnick31",
       "email": "nathan.mirochnick31@gmail.com",
       "weeklyScores": [
-        18
+        18,
+        13
       ],
-      "totalPoints": 18,
-      "totalGames": 19,
+      "totalPoints": 31,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -1036,6 +1661,42 @@
         ],
         "TCU at North Carolina": [
           "North Carolina"
+        ],
+        "Illinois at Duke": [
+          "Illinois"
+        ],
+        "Baylor at SMU": [
+          "Baylor"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa"
+        ],
+        "Ole Miss at Kentucky": [
+          "Ole Miss"
+        ],
+        "Kansas at Missouri": [
+          "Kansas"
+        ],
+        "Michigan at Oklahoma": [
+          "Over"
+        ],
+        "South Florida at Florida": [
+          "South Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Virginia Tech"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Michigan State"
         ]
       }
     },
@@ -1043,10 +1704,11 @@
       "name": "alexgarrett00",
       "email": "alexgarrett00@gmail.com",
       "weeklyScores": [
-        16
+        16,
+        15
       ],
-      "totalPoints": 16,
-      "totalGames": 19,
+      "totalPoints": 31,
+      "totalGames": 32,
       "picks": {
         "Boise State at South Florida": [
           "Boise State"
@@ -1101,6 +1763,42 @@
         ],
         "TCU at North Carolina": [
           "TCU"
+        ],
+        "Illinois at Duke": [
+          "Illinois"
+        ],
+        "Baylor at SMU": [
+          "SMU"
+        ],
+        "Iowa at Iowa State": [
+          "Iowa State"
+        ],
+        "Ole Miss at Kentucky": [
+          "Kentucky"
+        ],
+        "Kansas at Missouri": [
+          "Missouri"
+        ],
+        "Michigan at Oklahoma": [
+          "Under"
+        ],
+        "South Florida at Florida": [
+          "South Florida"
+        ],
+        "Arizona State at Mississippi State": [
+          "Arizona State"
+        ],
+        "Vanderbilt at Virginia Tech": [
+          "Vanderbilt"
+        ],
+        "Stanford at BYU": [
+          "BYU"
+        ],
+        "Virginia at NC State": [
+          "NC State"
+        ],
+        "Boston College at Michigan State": [
+          "Boston College"
         ]
       }
     }
@@ -1495,6 +2193,272 @@
           "srohl42": "North Carolina",
           "nathan.mirochnick31": "North Carolina",
           "alexgarrett00": "TCU"
+        }
+      ]
+    },
+    "Illinois at Duke": {
+      "name": "Illinois at Duke",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Duke",
+          "jcdayton6": "Illinois",
+          "paulgiacomo273": "Illinois",
+          "alexgarrett00": "Illinois",
+          "srohl42": "Illinois",
+          "nathan.mirochnick31": "Illinois",
+          "nickwilliams957": "Illinois",
+          "bradyvols15": "Illinois",
+          "cartersk23": "Duke",
+          "calmasterson11": "Duke",
+          "jack.zager1": "Duke"
+        }
+      ]
+    },
+    "Baylor at SMU": {
+      "name": "Baylor at SMU",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Baylor",
+          "jcdayton6": "SMU",
+          "paulgiacomo273": "SMU",
+          "alexgarrett00": "SMU",
+          "srohl42": "SMU",
+          "nathan.mirochnick31": "Baylor",
+          "nickwilliams957": "Baylor",
+          "bradyvols15": "SMU",
+          "cartersk23": "Baylor",
+          "calmasterson11": "SMU",
+          "jack.zager1": "SMU"
+        }
+      ]
+    },
+    "Iowa at Iowa State": {
+      "name": "Iowa at Iowa State",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Iowa State",
+          "jcdayton6": "Iowa State",
+          "paulgiacomo273": "Iowa State",
+          "alexgarrett00": "Iowa State",
+          "srohl42": "Iowa State",
+          "nathan.mirochnick31": "Iowa",
+          "nickwilliams957": "Iowa",
+          "bradyvols15": "Iowa State",
+          "cartersk23": "Iowa State",
+          "calmasterson11": "Iowa State",
+          "jack.zager1": "Iowa State"
+        }
+      ]
+    },
+    "Ole Miss at Kentucky": {
+      "name": "Ole Miss at Kentucky",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Kentucky",
+          "jcdayton6": "Kentucky",
+          "paulgiacomo273": "Ole Miss",
+          "alexgarrett00": "Kentucky",
+          "srohl42": "Ole Miss",
+          "nathan.mirochnick31": "Ole Miss",
+          "nickwilliams957": "Ole Miss",
+          "bradyvols15": "Kentucky",
+          "cartersk23": "Ole Miss",
+          "calmasterson11": "Ole Miss",
+          "jack.zager1": "Kentucky"
+        }
+      ]
+    },
+    "Kansas at Missouri": {
+      "name": "Kansas at Missouri",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Missouri",
+          "jcdayton6": "Missouri",
+          "paulgiacomo273": "Missouri",
+          "alexgarrett00": "Missouri",
+          "srohl42": "Kansas",
+          "nathan.mirochnick31": "Kansas",
+          "nickwilliams957": "Missouri",
+          "bradyvols15": "Missouri",
+          "cartersk23": "Kansas",
+          "calmasterson11": "Missouri",
+          "jack.zager1": "Kansas"
+        }
+      ]
+    },
+    "Michigan at Oklahoma": {
+      "name": "Michigan at Oklahoma",
+      "weeks": [
+        2,
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Over",
+          "jcdayton6": "Under",
+          "paulgiacomo273": "Under",
+          "alexgarrett00": "Under",
+          "srohl42": "Under",
+          "nathan.mirochnick31": "Over",
+          "nickwilliams957": "Under",
+          "bradyvols15": "Under",
+          "cartersk23": "Under",
+          "calmasterson11": "Under",
+          "jack.zager1": "Over"
+        },
+        {
+          "jcmargraff": "Over",
+          "jcdayton6": "Under",
+          "paulgiacomo273": "Under",
+          "alexgarrett00": "Under",
+          "srohl42": "Under",
+          "nathan.mirochnick31": "Over",
+          "nickwilliams957": "Under",
+          "bradyvols15": "Under",
+          "cartersk23": "Under",
+          "calmasterson11": "Under",
+          "jack.zager1": "Over"
+        }
+      ]
+    },
+    "South Florida at Florida": {
+      "name": "South Florida at Florida",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Florida",
+          "jcdayton6": "Florida",
+          "paulgiacomo273": "South Florida",
+          "alexgarrett00": "South Florida",
+          "srohl42": "Florida",
+          "nathan.mirochnick31": "South Florida",
+          "nickwilliams957": "Florida",
+          "bradyvols15": "Florida",
+          "cartersk23": "Florida",
+          "calmasterson11": "Florida",
+          "jack.zager1": "South Florida"
+        }
+      ]
+    },
+    "Arizona State at Mississippi State": {
+      "name": "Arizona State at Mississippi State",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Mississippi State",
+          "jcdayton6": "Arizona State",
+          "paulgiacomo273": "Mississippi State",
+          "alexgarrett00": "Arizona State",
+          "srohl42": "Arizona State",
+          "nathan.mirochnick31": "Mississippi State",
+          "nickwilliams957": "Arizona State",
+          "bradyvols15": "Mississippi State",
+          "cartersk23": "Mississippi State",
+          "calmasterson11": "Arizona State",
+          "jack.zager1": "Arizona State"
+        }
+      ]
+    },
+    "Vanderbilt at Virginia Tech": {
+      "name": "Vanderbilt at Virginia Tech",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Virginia Tech",
+          "jcdayton6": "Vanderbilt",
+          "paulgiacomo273": "Vanderbilt",
+          "alexgarrett00": "Vanderbilt",
+          "srohl42": "Virginia Tech",
+          "nathan.mirochnick31": "Virginia Tech",
+          "nickwilliams957": "Vanderbilt",
+          "bradyvols15": "Virginia Tech",
+          "cartersk23": "Vanderbilt",
+          "calmasterson11": "Virginia Tech",
+          "jack.zager1": "Virginia Tech"
+        }
+      ]
+    },
+    "Stanford at BYU": {
+      "name": "Stanford at BYU",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "BYU",
+          "jcdayton6": "BYU",
+          "paulgiacomo273": "BYU",
+          "alexgarrett00": "BYU",
+          "srohl42": "BYU",
+          "nathan.mirochnick31": "BYU",
+          "nickwilliams957": "BYU",
+          "bradyvols15": "BYU",
+          "cartersk23": "BYU",
+          "calmasterson11": "BYU",
+          "jack.zager1": "BYU"
+        }
+      ]
+    },
+    "Virginia at NC State": {
+      "name": "Virginia at NC State",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "NC State",
+          "jcdayton6": "NC State",
+          "paulgiacomo273": "NC State",
+          "alexgarrett00": "NC State",
+          "srohl42": "NC State",
+          "nathan.mirochnick31": "NC State",
+          "nickwilliams957": "NC State",
+          "bradyvols15": "NC State",
+          "cartersk23": "NC State",
+          "calmasterson11": "NC State",
+          "jack.zager1": "NC State"
+        }
+      ]
+    },
+    "Boston College at Michigan State": {
+      "name": "Boston College at Michigan State",
+      "weeks": [
+        2
+      ],
+      "picks": [
+        {
+          "jcmargraff": "Boston College",
+          "jcdayton6": "Michigan State",
+          "paulgiacomo273": "Michigan State",
+          "alexgarrett00": "Boston College",
+          "srohl42": "Boston College",
+          "nathan.mirochnick31": "Michigan State",
+          "nickwilliams957": "Michigan State",
+          "bradyvols15": "Boston College",
+          "cartersk23": "Michigan State",
+          "calmasterson11": "Boston College",
+          "jack.zager1": "Michigan State"
         }
       ]
     }

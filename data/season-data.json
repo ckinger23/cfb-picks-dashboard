@@ -5011,6 +5011,452 @@
           "column": "California at Stanford ( + 3.5 )"
         }
       ]
+    },
+    {
+      "players": [
+        {
+          "name": "alexgarrett00",
+          "email": "alexgarrett00@gmail.com",
+          "totalPoints": 28,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Ole Miss",
+            "Utah at Kansas": "Kansas",
+            "Iowa at Nebraska": "Iowa",
+            "Ohio State at Michigan": "Michigan",
+            "Ohio State at  Michigan": "Under",
+            "Georgia at Georgia Tech": "Georgia",
+            "Texas A&M at Texas": "Texas",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "West Virginia",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "UCLA",
+            "Virginia Tech at Virginia": "Virginia",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "TCU",
+            "Kentucky at Louisville": "Kentucky",
+            "Clemson at South Carolina": "South Carolina",
+            "LSU at Oklahoma": "LSU",
+            "Vanderbilt at Tennessee": "Vanderbilt",
+            "Missouri at Arkansas": "Missouri",
+            "Alabama at Auburn": "Alabama"
+          }
+        },
+        {
+          "name": "bradyvols15",
+          "email": "bradyvols15@gmail.com",
+          "totalPoints": 27,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Ole Miss",
+            "Utah at Kansas": "Kansas",
+            "Iowa at Nebraska": "Iowa",
+            "Ohio State at Michigan": "Michigan",
+            "Ohio State at  Michigan": "Under",
+            "Georgia at Georgia Tech": "Georgia",
+            "Texas A&M at Texas": "Texas",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "Texas Tech",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "UCLA",
+            "Virginia Tech at Virginia": "Virginia",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "TCU",
+            "Kentucky at Louisville": "Louisville",
+            "Clemson at South Carolina": "Clemson",
+            "LSU at Oklahoma": "LSU",
+            "Vanderbilt at Tennessee": "Vanderbilt",
+            "Missouri at Arkansas": "Missouri",
+            "Alabama at Auburn": "Alabama"
+          }
+        },
+        {
+          "name": "paulgiacomo273",
+          "email": "paulgiacomo273@gmail.com",
+          "totalPoints": 25,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Ole Miss",
+            "Utah at Kansas": "Kansas",
+            "Iowa at Nebraska": "Nebraska",
+            "Ohio State at Michigan": "Ohio State",
+            "Ohio State at  Michigan": "Under",
+            "Georgia at Georgia Tech": "Georgia Tech",
+            "Texas A&M at Texas": "Texas A&M",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "Texas Tech",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "UCLA",
+            "Virginia Tech at Virginia": "Virginia",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "Cincinnati",
+            "Kentucky at Louisville": "Louisville",
+            "Clemson at South Carolina": "South Carolina",
+            "LSU at Oklahoma": "Oklahoma",
+            "Vanderbilt at Tennessee": "Tennessee",
+            "Missouri at Arkansas": "Arkansas",
+            "Alabama at Auburn": "Alabama"
+          }
+        },
+        {
+          "name": "jack.zager1",
+          "email": "jack.zager1@gmail.com",
+          "totalPoints": 25,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Mississippi State",
+            "Utah at Kansas": "Kansas",
+            "Iowa at Nebraska": "Iowa",
+            "Ohio State at Michigan": "Michigan",
+            "Ohio State at  Michigan": "Over",
+            "Georgia at Georgia Tech": "Georgia",
+            "Texas A&M at Texas": "Texas",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "West Virginia",
+            "Oregon at Washington": "Washington",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "USC",
+            "Virginia Tech at Virginia": "Virginia",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "California",
+            "Cincinnati at TCU": "TCU",
+            "Kentucky at Louisville": "Louisville",
+            "Clemson at South Carolina": "South Carolina",
+            "LSU at Oklahoma": "Oklahoma",
+            "Vanderbilt at Tennessee": "Tennessee",
+            "Missouri at Arkansas": "Arkansas",
+            "Alabama at Auburn": "Alabama"
+          }
+        },
+        {
+          "name": "nathan.mirochnick31",
+          "email": "nathan.mirochnick31@gmail.com",
+          "totalPoints": 24,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Ole Miss",
+            "Utah at Kansas": "Kansas",
+            "Iowa at Nebraska": "Iowa",
+            "Ohio State at Michigan": "Ohio State",
+            "Ohio State at  Michigan": "Over",
+            "Georgia at Georgia Tech": "Georgia Tech",
+            "Texas A&M at Texas": "Texas",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "Texas Tech",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "USC",
+            "Virginia Tech at Virginia": "Virginia Tech",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "Cincinnati",
+            "Kentucky at Louisville": "Louisville",
+            "Clemson at South Carolina": "Clemson",
+            "LSU at Oklahoma": "Oklahoma",
+            "Vanderbilt at Tennessee": "Tennessee",
+            "Missouri at Arkansas": "Missouri",
+            "Alabama at Auburn": "Alabama"
+          }
+        },
+        {
+          "name": "nickwilliams957",
+          "email": "nickwilliams957@gmail.com",
+          "totalPoints": 23,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Ole Miss",
+            "Utah at Kansas": "Kansas",
+            "Iowa at Nebraska": "Iowa",
+            "Ohio State at Michigan": "Michigan",
+            "Ohio State at  Michigan": "Under",
+            "Georgia at Georgia Tech": "Georgia Tech",
+            "Texas A&M at Texas": "Texas A&M",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "Texas Tech",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "USC",
+            "Virginia Tech at Virginia": "Virginia",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "TCU",
+            "Kentucky at Louisville": "Kentucky",
+            "Clemson at South Carolina": "South Carolina",
+            "LSU at Oklahoma": "Oklahoma",
+            "Vanderbilt at Tennessee": "Tennessee",
+            "Missouri at Arkansas": "Arkansas",
+            "Alabama at Auburn": "Alabama"
+          }
+        },
+        {
+          "name": "cartersk23",
+          "email": "cartersk23@gmail.com",
+          "totalPoints": 21,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Ole Miss",
+            "Utah at Kansas": "Utah",
+            "Iowa at Nebraska": "Iowa",
+            "Ohio State at Michigan": "Ohio State",
+            "Ohio State at  Michigan": "Under",
+            "Georgia at Georgia Tech": "Georgia",
+            "Texas A&M at Texas": "Texas",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "Texas Tech",
+            "Oregon at Washington": "Washington",
+            "UCF at BYU": "UCF",
+            "UCLA at USC": "UCLA",
+            "Virginia Tech at Virginia": "Virginia Tech",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "Cincinnati",
+            "Kentucky at Louisville": "Kentucky",
+            "Clemson at South Carolina": "Clemson",
+            "LSU at Oklahoma": "Oklahoma",
+            "Vanderbilt at Tennessee": "Tennessee",
+            "Missouri at Arkansas": "Arkansas",
+            "Alabama at Auburn": "Auburn"
+          }
+        },
+        {
+          "name": "jcmargraff",
+          "email": "jcmargraff@gmail.com",
+          "totalPoints": 21,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Mississippi State",
+            "Utah at Kansas": "Kansas",
+            "Iowa at Nebraska": "Nebraska",
+            "Ohio State at Michigan": "Michigan",
+            "Ohio State at  Michigan": "Under",
+            "Georgia at Georgia Tech": "Georgia",
+            "Texas A&M at Texas": "Texas A&M",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "West Virginia",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "USC",
+            "Virginia Tech at Virginia": "Virginia",
+            "Florida State at Florida": "Florida State",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "TCU",
+            "Kentucky at Louisville": "Louisville",
+            "Clemson at South Carolina": "South Carolina",
+            "LSU at Oklahoma": "LSU",
+            "Vanderbilt at Tennessee": "Vanderbilt",
+            "Missouri at Arkansas": "Missouri",
+            "Alabama at Auburn": "Alabama"
+          }
+        },
+        {
+          "name": "srohl42",
+          "email": "srohl42@gmail.com",
+          "totalPoints": 21,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Mississippi State",
+            "Utah at Kansas": "Kansas",
+            "Iowa at Nebraska": "Iowa",
+            "Ohio State at Michigan": "Ohio State",
+            "Ohio State at  Michigan": "Over",
+            "Georgia at Georgia Tech": "Georgia Tech",
+            "Texas A&M at Texas": "Texas A&M",
+            "Arizona at Arizona State": "Arizona",
+            "Texas Tech at West Virginia": "West Virginia",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "USC",
+            "Virginia Tech at Virginia": "Virginia",
+            "Florida State at Florida": "Florida State",
+            "SMU at California": "California",
+            "Cincinnati at TCU": "TCU",
+            "Kentucky at Louisville": "Louisville",
+            "Clemson at South Carolina": "South Carolina",
+            "LSU at Oklahoma": "Oklahoma",
+            "Vanderbilt at Tennessee": "Tennessee",
+            "Missouri at Arkansas": "Missouri",
+            "Alabama at Auburn": "Auburn"
+          }
+        },
+        {
+          "name": "jcdayton6",
+          "email": "jcdayton6@gmail.com",
+          "totalPoints": 20,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Mississippi State",
+            "Utah at Kansas": "Utah",
+            "Iowa at Nebraska": "Nebraska",
+            "Ohio State at Michigan": "Ohio State",
+            "Ohio State at  Michigan": "Over",
+            "Georgia at Georgia Tech": "Georgia",
+            "Texas A&M at Texas": "Texas",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "Texas Tech",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "UCF",
+            "UCLA at USC": "USC",
+            "Virginia Tech at Virginia": "Virginia Tech",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "TCU",
+            "Kentucky at Louisville": "Louisville",
+            "Clemson at South Carolina": "Clemson",
+            "LSU at Oklahoma": "Oklahoma",
+            "Vanderbilt at Tennessee": "Tennessee",
+            "Missouri at Arkansas": "Arkansas",
+            "Alabama at Auburn": "Auburn"
+          }
+        },
+        {
+          "name": "calmasterson11",
+          "email": "calmasterson11@gmail.com",
+          "totalPoints": 18,
+          "gamesPlayed": 22,
+          "picks": {
+            "Ole Miss at Mississippi State": "Ole Miss",
+            "Utah at Kansas": "Utah",
+            "Iowa at Nebraska": "Iowa",
+            "Ohio State at Michigan": "Ohio State",
+            "Ohio State at  Michigan": "Over",
+            "Georgia at Georgia Tech": "Georgia Tech",
+            "Texas A&M at Texas": "Texas",
+            "Arizona at Arizona State": "Arizona State",
+            "Texas Tech at West Virginia": "Texas Tech",
+            "Oregon at Washington": "Oregon",
+            "UCF at BYU": "BYU",
+            "UCLA at USC": "USC",
+            "Virginia Tech at Virginia": "Virginia Tech",
+            "Florida State at Florida": "Florida",
+            "SMU at California": "SMU",
+            "Cincinnati at TCU": "Cincinnati",
+            "Kentucky at Louisville": "Louisville",
+            "Clemson at South Carolina": "South Carolina",
+            "LSU at Oklahoma": "Oklahoma",
+            "Vanderbilt at Tennessee": "Tennessee",
+            "Missouri at Arkansas": "Missouri",
+            "Alabama at Auburn": "Alabama"
+          }
+        }
+      ],
+      "games": [
+        {
+          "name": "Ole Miss at Mississippi State",
+          "type": "spread",
+          "column": "Ole Miss at Mississippi State ( + 7.5 )"
+        },
+        {
+          "name": "Utah at Kansas",
+          "type": "spread",
+          "column": "Utah at Kansas ( + 11.5 )"
+        },
+        {
+          "name": "Iowa at Nebraska",
+          "type": "spread",
+          "column": "Iowa at Nebraska ( + 6.5 )"
+        },
+        {
+          "name": "Ohio State at Michigan",
+          "type": "spread",
+          "column": "Ohio State at Michigan ( + 10.5 )\nCollege Gameday - 2 pts"
+        },
+        {
+          "name": "Ohio State at  Michigan",
+          "type": "spread",
+          "column": "Ohio State at  Michigan  ( 44.5 )\nCollege Gameday - 2 pts"
+        },
+        {
+          "name": "Georgia at Georgia Tech",
+          "type": "spread",
+          "column": "Georgia at Georgia Tech ( + 13.5 )"
+        },
+        {
+          "name": "Texas A&M at Texas",
+          "type": "spread",
+          "column": "Texas A&M at Texas ( + 2.5 )"
+        },
+        {
+          "name": "Arizona at Arizona State",
+          "type": "spread",
+          "column": "Arizona at Arizona State ( + 2.5 )"
+        },
+        {
+          "name": "Texas Tech at West Virginia",
+          "type": "spread",
+          "column": "Texas Tech at West Virginia ( + 23.5 )"
+        },
+        {
+          "name": "Oregon at Washington",
+          "type": "spread",
+          "column": "Oregon at Washington ( + 6.5 )"
+        },
+        {
+          "name": "UCF at BYU",
+          "type": "spread",
+          "column": "UCF at BYU ( - 17.5 )"
+        },
+        {
+          "name": "UCLA at USC",
+          "type": "spread",
+          "column": "UCLA at USC ( - 21.5 )"
+        },
+        {
+          "name": "Virginia Tech at Virginia",
+          "type": "spread",
+          "column": "Virginia Tech at Virginia ( - 9.5 )"
+        },
+        {
+          "name": "Florida State at Florida",
+          "type": "spread",
+          "column": "Florida State at Florida ( - 1.5 )"
+        },
+        {
+          "name": "SMU at California",
+          "type": "spread",
+          "column": "SMU at California ( + 13.5 )"
+        },
+        {
+          "name": "Cincinnati at TCU",
+          "type": "spread",
+          "column": "Cincinnati at TCU ( - 3.5 )"
+        },
+        {
+          "name": "Kentucky at Louisville",
+          "type": "spread",
+          "column": "Kentucky at Louisville ( - 2.5 )"
+        },
+        {
+          "name": "Clemson at South Carolina",
+          "type": "spread",
+          "column": "Clemson at South Carolina ( - 2.5 )"
+        },
+        {
+          "name": "LSU at Oklahoma",
+          "type": "spread",
+          "column": "LSU at Oklahoma ( - 10.5 )"
+        },
+        {
+          "name": "Vanderbilt at Tennessee",
+          "type": "spread",
+          "column": "Vanderbilt at Tennessee ( - 2.5 )"
+        },
+        {
+          "name": "Missouri at Arkansas",
+          "type": "spread",
+          "column": "Missouri at Arkansas ( + 2.5 )"
+        },
+        {
+          "name": "Alabama at Auburn",
+          "type": "spread",
+          "column": "Alabama at Auburn ( + 5.5 )"
+        }
+      ]
     }
   ],
   "players": {
@@ -5030,10 +5476,11 @@
         19,
         23,
         21,
-        21
+        21,
+        18
       ],
-      "totalPoints": 254,
-      "totalGames": 252,
+      "totalPoints": 272,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -5748,6 +6195,72 @@
         ],
         "California at Stanford": [
           "California"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Ole Miss"
+        ],
+        "Utah at Kansas": [
+          "Utah"
+        ],
+        "Iowa at Nebraska": [
+          "Iowa"
+        ],
+        "Ohio State at Michigan": [
+          "Ohio State"
+        ],
+        "Ohio State at  Michigan": [
+          "Over"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia Tech"
+        ],
+        "Texas A&M at Texas": [
+          "Texas"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "Texas Tech"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "USC"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia Tech"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "Cincinnati"
+        ],
+        "Kentucky at Louisville": [
+          "Louisville"
+        ],
+        "Clemson at South Carolina": [
+          "South Carolina"
+        ],
+        "LSU at Oklahoma": [
+          "Oklahoma"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Tennessee"
+        ],
+        "Missouri at Arkansas": [
+          "Missouri"
+        ],
+        "Alabama at Auburn": [
+          "Alabama"
         ]
       }
     },
@@ -5767,10 +6280,11 @@
         19,
         26,
         19,
-        14
+        14,
+        20
       ],
-      "totalPoints": 254,
-      "totalGames": 252,
+      "totalPoints": 274,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -6485,6 +6999,72 @@
         ],
         "California at Stanford": [
           "Stanford"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Utah at Kansas": [
+          "Utah"
+        ],
+        "Iowa at Nebraska": [
+          "Nebraska"
+        ],
+        "Ohio State at Michigan": [
+          "Ohio State"
+        ],
+        "Ohio State at  Michigan": [
+          "Over"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia"
+        ],
+        "Texas A&M at Texas": [
+          "Texas"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "Texas Tech"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "UCF"
+        ],
+        "UCLA at USC": [
+          "USC"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia Tech"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "TCU"
+        ],
+        "Kentucky at Louisville": [
+          "Louisville"
+        ],
+        "Clemson at South Carolina": [
+          "Clemson"
+        ],
+        "LSU at Oklahoma": [
+          "Oklahoma"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Tennessee"
+        ],
+        "Missouri at Arkansas": [
+          "Arkansas"
+        ],
+        "Alabama at Auburn": [
+          "Auburn"
         ]
       }
     },
@@ -6504,10 +7084,11 @@
         23,
         23,
         22,
-        22
+        22,
+        25
       ],
-      "totalPoints": 260,
-      "totalGames": 251,
+      "totalPoints": 285,
+      "totalGames": 273,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -7222,6 +7803,72 @@
         ],
         "California at Stanford": [
           "Stanford"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Utah at Kansas": [
+          "Kansas"
+        ],
+        "Iowa at Nebraska": [
+          "Iowa"
+        ],
+        "Ohio State at Michigan": [
+          "Michigan"
+        ],
+        "Ohio State at  Michigan": [
+          "Over"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia"
+        ],
+        "Texas A&M at Texas": [
+          "Texas"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "West Virginia"
+        ],
+        "Oregon at Washington": [
+          "Washington"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "USC"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "California"
+        ],
+        "Cincinnati at TCU": [
+          "TCU"
+        ],
+        "Kentucky at Louisville": [
+          "Louisville"
+        ],
+        "Clemson at South Carolina": [
+          "South Carolina"
+        ],
+        "LSU at Oklahoma": [
+          "Oklahoma"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Tennessee"
+        ],
+        "Missouri at Arkansas": [
+          "Arkansas"
+        ],
+        "Alabama at Auburn": [
+          "Alabama"
         ]
       }
     },
@@ -7241,10 +7888,11 @@
         23,
         24,
         28,
-        13
+        13,
+        21
       ],
-      "totalPoints": 249,
-      "totalGames": 252,
+      "totalPoints": 270,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -7959,6 +8607,72 @@
         ],
         "California at Stanford": [
           "California"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Ole Miss"
+        ],
+        "Utah at Kansas": [
+          "Utah"
+        ],
+        "Iowa at Nebraska": [
+          "Iowa"
+        ],
+        "Ohio State at Michigan": [
+          "Ohio State"
+        ],
+        "Ohio State at  Michigan": [
+          "Under"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia"
+        ],
+        "Texas A&M at Texas": [
+          "Texas"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "Texas Tech"
+        ],
+        "Oregon at Washington": [
+          "Washington"
+        ],
+        "UCF at BYU": [
+          "UCF"
+        ],
+        "UCLA at USC": [
+          "UCLA"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia Tech"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "Cincinnati"
+        ],
+        "Kentucky at Louisville": [
+          "Kentucky"
+        ],
+        "Clemson at South Carolina": [
+          "Clemson"
+        ],
+        "LSU at Oklahoma": [
+          "Oklahoma"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Tennessee"
+        ],
+        "Missouri at Arkansas": [
+          "Arkansas"
+        ],
+        "Alabama at Auburn": [
+          "Auburn"
         ]
       }
     },
@@ -7978,10 +8692,11 @@
         23,
         19,
         21,
-        19
+        19,
+        21
       ],
-      "totalPoints": 270,
-      "totalGames": 252,
+      "totalPoints": 291,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -8696,6 +9411,72 @@
         ],
         "California at Stanford": [
           "California"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Utah at Kansas": [
+          "Kansas"
+        ],
+        "Iowa at Nebraska": [
+          "Nebraska"
+        ],
+        "Ohio State at Michigan": [
+          "Michigan"
+        ],
+        "Ohio State at  Michigan": [
+          "Under"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia"
+        ],
+        "Texas A&M at Texas": [
+          "Texas A&M"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "West Virginia"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "USC"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia"
+        ],
+        "Florida State at Florida": [
+          "Florida State"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "TCU"
+        ],
+        "Kentucky at Louisville": [
+          "Louisville"
+        ],
+        "Clemson at South Carolina": [
+          "South Carolina"
+        ],
+        "LSU at Oklahoma": [
+          "LSU"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Vanderbilt"
+        ],
+        "Missouri at Arkansas": [
+          "Missouri"
+        ],
+        "Alabama at Auburn": [
+          "Alabama"
         ]
       }
     },
@@ -8715,10 +9496,11 @@
         26,
         19,
         18,
-        19
+        19,
+        23
       ],
-      "totalPoints": 260,
-      "totalGames": 252,
+      "totalPoints": 283,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -9433,6 +10215,72 @@
         ],
         "California at Stanford": [
           "California"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Ole Miss"
+        ],
+        "Utah at Kansas": [
+          "Kansas"
+        ],
+        "Iowa at Nebraska": [
+          "Iowa"
+        ],
+        "Ohio State at Michigan": [
+          "Michigan"
+        ],
+        "Ohio State at  Michigan": [
+          "Under"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia Tech"
+        ],
+        "Texas A&M at Texas": [
+          "Texas A&M"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "Texas Tech"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "USC"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "TCU"
+        ],
+        "Kentucky at Louisville": [
+          "Kentucky"
+        ],
+        "Clemson at South Carolina": [
+          "South Carolina"
+        ],
+        "LSU at Oklahoma": [
+          "Oklahoma"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Tennessee"
+        ],
+        "Missouri at Arkansas": [
+          "Arkansas"
+        ],
+        "Alabama at Auburn": [
+          "Alabama"
         ]
       }
     },
@@ -9452,10 +10300,11 @@
         23,
         19,
         22,
-        23
+        23,
+        25
       ],
-      "totalPoints": 252,
-      "totalGames": 252,
+      "totalPoints": 277,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -10170,6 +11019,72 @@
         ],
         "California at Stanford": [
           "California"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Ole Miss"
+        ],
+        "Utah at Kansas": [
+          "Kansas"
+        ],
+        "Iowa at Nebraska": [
+          "Nebraska"
+        ],
+        "Ohio State at Michigan": [
+          "Ohio State"
+        ],
+        "Ohio State at  Michigan": [
+          "Under"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia Tech"
+        ],
+        "Texas A&M at Texas": [
+          "Texas A&M"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "Texas Tech"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "UCLA"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "Cincinnati"
+        ],
+        "Kentucky at Louisville": [
+          "Louisville"
+        ],
+        "Clemson at South Carolina": [
+          "South Carolina"
+        ],
+        "LSU at Oklahoma": [
+          "Oklahoma"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Tennessee"
+        ],
+        "Missouri at Arkansas": [
+          "Arkansas"
+        ],
+        "Alabama at Auburn": [
+          "Alabama"
         ]
       }
     },
@@ -10189,10 +11104,11 @@
         21,
         28,
         18,
-        18
+        18,
+        27
       ],
-      "totalPoints": 246,
-      "totalGames": 252,
+      "totalPoints": 273,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -10907,6 +11823,72 @@
         ],
         "California at Stanford": [
           "California"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Ole Miss"
+        ],
+        "Utah at Kansas": [
+          "Kansas"
+        ],
+        "Iowa at Nebraska": [
+          "Iowa"
+        ],
+        "Ohio State at Michigan": [
+          "Michigan"
+        ],
+        "Ohio State at  Michigan": [
+          "Under"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia"
+        ],
+        "Texas A&M at Texas": [
+          "Texas"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "Texas Tech"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "UCLA"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "TCU"
+        ],
+        "Kentucky at Louisville": [
+          "Louisville"
+        ],
+        "Clemson at South Carolina": [
+          "Clemson"
+        ],
+        "LSU at Oklahoma": [
+          "LSU"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Vanderbilt"
+        ],
+        "Missouri at Arkansas": [
+          "Missouri"
+        ],
+        "Alabama at Auburn": [
+          "Alabama"
         ]
       }
     },
@@ -10926,10 +11908,11 @@
         26,
         19,
         21,
-        22
+        22,
+        21
       ],
-      "totalPoints": 247,
-      "totalGames": 252,
+      "totalPoints": 268,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "Boise State"
@@ -11644,6 +12627,72 @@
         ],
         "California at Stanford": [
           "California"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Mississippi State"
+        ],
+        "Utah at Kansas": [
+          "Kansas"
+        ],
+        "Iowa at Nebraska": [
+          "Iowa"
+        ],
+        "Ohio State at Michigan": [
+          "Ohio State"
+        ],
+        "Ohio State at  Michigan": [
+          "Over"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia Tech"
+        ],
+        "Texas A&M at Texas": [
+          "Texas A&M"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona"
+        ],
+        "Texas Tech at West Virginia": [
+          "West Virginia"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "USC"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia"
+        ],
+        "Florida State at Florida": [
+          "Florida State"
+        ],
+        "SMU at California": [
+          "California"
+        ],
+        "Cincinnati at TCU": [
+          "TCU"
+        ],
+        "Kentucky at Louisville": [
+          "Louisville"
+        ],
+        "Clemson at South Carolina": [
+          "South Carolina"
+        ],
+        "LSU at Oklahoma": [
+          "Oklahoma"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Tennessee"
+        ],
+        "Missouri at Arkansas": [
+          "Missouri"
+        ],
+        "Alabama at Auburn": [
+          "Auburn"
         ]
       }
     },
@@ -11660,10 +12709,11 @@
         21,
         24,
         21,
-        17
+        17,
+        24
       ],
-      "totalPoints": 193,
-      "totalGames": 190,
+      "totalPoints": 217,
+      "totalGames": 212,
       "picks": {
         "Boise State at South Florida": [
           "South Florida"
@@ -12201,6 +13251,72 @@
         ],
         "California at Stanford": [
           "Stanford"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Ole Miss"
+        ],
+        "Utah at Kansas": [
+          "Kansas"
+        ],
+        "Iowa at Nebraska": [
+          "Iowa"
+        ],
+        "Ohio State at Michigan": [
+          "Ohio State"
+        ],
+        "Ohio State at  Michigan": [
+          "Over"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia Tech"
+        ],
+        "Texas A&M at Texas": [
+          "Texas"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "Texas Tech"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "USC"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia Tech"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "Cincinnati"
+        ],
+        "Kentucky at Louisville": [
+          "Louisville"
+        ],
+        "Clemson at South Carolina": [
+          "Clemson"
+        ],
+        "LSU at Oklahoma": [
+          "Oklahoma"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Tennessee"
+        ],
+        "Missouri at Arkansas": [
+          "Missouri"
+        ],
+        "Alabama at Auburn": [
+          "Alabama"
         ]
       }
     },
@@ -12220,10 +13336,11 @@
         29,
         26,
         25,
-        19
+        19,
+        28
       ],
-      "totalPoints": 260,
-      "totalGames": 252,
+      "totalPoints": 288,
+      "totalGames": 274,
       "picks": {
         "Boise State at South Florida": [
           "Boise State"
@@ -12938,6 +14055,72 @@
         ],
         "California at Stanford": [
           "California"
+        ],
+        "Ole Miss at Mississippi State": [
+          "Ole Miss"
+        ],
+        "Utah at Kansas": [
+          "Kansas"
+        ],
+        "Iowa at Nebraska": [
+          "Iowa"
+        ],
+        "Ohio State at Michigan": [
+          "Michigan"
+        ],
+        "Ohio State at  Michigan": [
+          "Under"
+        ],
+        "Georgia at Georgia Tech": [
+          "Georgia"
+        ],
+        "Texas A&M at Texas": [
+          "Texas"
+        ],
+        "Arizona at Arizona State": [
+          "Arizona State"
+        ],
+        "Texas Tech at West Virginia": [
+          "West Virginia"
+        ],
+        "Oregon at Washington": [
+          "Oregon"
+        ],
+        "UCF at BYU": [
+          "BYU"
+        ],
+        "UCLA at USC": [
+          "UCLA"
+        ],
+        "Virginia Tech at Virginia": [
+          "Virginia"
+        ],
+        "Florida State at Florida": [
+          "Florida"
+        ],
+        "SMU at California": [
+          "SMU"
+        ],
+        "Cincinnati at TCU": [
+          "TCU"
+        ],
+        "Kentucky at Louisville": [
+          "Kentucky"
+        ],
+        "Clemson at South Carolina": [
+          "South Carolina"
+        ],
+        "LSU at Oklahoma": [
+          "LSU"
+        ],
+        "Vanderbilt at Tennessee": [
+          "Vanderbilt"
+        ],
+        "Missouri at Arkansas": [
+          "Missouri"
+        ],
+        "Alabama at Auburn": [
+          "Alabama"
         ]
       }
     }
@@ -18058,6 +19241,468 @@
           "nathan.mirochnick31": "Stanford",
           "jcdayton6": "Stanford",
           "cartersk23": "California"
+        }
+      ]
+    },
+    "Ole Miss at Mississippi State": {
+      "name": "Ole Miss at Mississippi State",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Ole Miss",
+          "bradyvols15": "Ole Miss",
+          "paulgiacomo273": "Ole Miss",
+          "jack.zager1": "Mississippi State",
+          "nathan.mirochnick31": "Ole Miss",
+          "nickwilliams957": "Ole Miss",
+          "cartersk23": "Ole Miss",
+          "jcmargraff": "Mississippi State",
+          "srohl42": "Mississippi State",
+          "jcdayton6": "Mississippi State",
+          "calmasterson11": "Ole Miss"
+        }
+      ]
+    },
+    "Utah at Kansas": {
+      "name": "Utah at Kansas",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Kansas",
+          "bradyvols15": "Kansas",
+          "paulgiacomo273": "Kansas",
+          "jack.zager1": "Kansas",
+          "nathan.mirochnick31": "Kansas",
+          "nickwilliams957": "Kansas",
+          "cartersk23": "Utah",
+          "jcmargraff": "Kansas",
+          "srohl42": "Kansas",
+          "jcdayton6": "Utah",
+          "calmasterson11": "Utah"
+        }
+      ]
+    },
+    "Iowa at Nebraska": {
+      "name": "Iowa at Nebraska",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Iowa",
+          "bradyvols15": "Iowa",
+          "paulgiacomo273": "Nebraska",
+          "jack.zager1": "Iowa",
+          "nathan.mirochnick31": "Iowa",
+          "nickwilliams957": "Iowa",
+          "cartersk23": "Iowa",
+          "jcmargraff": "Nebraska",
+          "srohl42": "Iowa",
+          "jcdayton6": "Nebraska",
+          "calmasterson11": "Iowa"
+        }
+      ]
+    },
+    "Ohio State at Michigan": {
+      "name": "Ohio State at Michigan",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Michigan",
+          "bradyvols15": "Michigan",
+          "paulgiacomo273": "Ohio State",
+          "jack.zager1": "Michigan",
+          "nathan.mirochnick31": "Ohio State",
+          "nickwilliams957": "Michigan",
+          "cartersk23": "Ohio State",
+          "jcmargraff": "Michigan",
+          "srohl42": "Ohio State",
+          "jcdayton6": "Ohio State",
+          "calmasterson11": "Ohio State"
+        }
+      ]
+    },
+    "Ohio State at  Michigan": {
+      "name": "Ohio State at  Michigan",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Under",
+          "bradyvols15": "Under",
+          "paulgiacomo273": "Under",
+          "jack.zager1": "Over",
+          "nathan.mirochnick31": "Over",
+          "nickwilliams957": "Under",
+          "cartersk23": "Under",
+          "jcmargraff": "Under",
+          "srohl42": "Over",
+          "jcdayton6": "Over",
+          "calmasterson11": "Over"
+        }
+      ]
+    },
+    "Georgia at Georgia Tech": {
+      "name": "Georgia at Georgia Tech",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Georgia",
+          "bradyvols15": "Georgia",
+          "paulgiacomo273": "Georgia Tech",
+          "jack.zager1": "Georgia",
+          "nathan.mirochnick31": "Georgia Tech",
+          "nickwilliams957": "Georgia Tech",
+          "cartersk23": "Georgia",
+          "jcmargraff": "Georgia",
+          "srohl42": "Georgia Tech",
+          "jcdayton6": "Georgia",
+          "calmasterson11": "Georgia Tech"
+        }
+      ]
+    },
+    "Texas A&M at Texas": {
+      "name": "Texas A&M at Texas",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Texas",
+          "bradyvols15": "Texas",
+          "paulgiacomo273": "Texas A&M",
+          "jack.zager1": "Texas",
+          "nathan.mirochnick31": "Texas",
+          "nickwilliams957": "Texas A&M",
+          "cartersk23": "Texas",
+          "jcmargraff": "Texas A&M",
+          "srohl42": "Texas A&M",
+          "jcdayton6": "Texas",
+          "calmasterson11": "Texas"
+        }
+      ]
+    },
+    "Arizona at Arizona State": {
+      "name": "Arizona at Arizona State",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Arizona State",
+          "bradyvols15": "Arizona State",
+          "paulgiacomo273": "Arizona State",
+          "jack.zager1": "Arizona State",
+          "nathan.mirochnick31": "Arizona State",
+          "nickwilliams957": "Arizona State",
+          "cartersk23": "Arizona State",
+          "jcmargraff": "Arizona State",
+          "srohl42": "Arizona",
+          "jcdayton6": "Arizona State",
+          "calmasterson11": "Arizona State"
+        }
+      ]
+    },
+    "Texas Tech at West Virginia": {
+      "name": "Texas Tech at West Virginia",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "West Virginia",
+          "bradyvols15": "Texas Tech",
+          "paulgiacomo273": "Texas Tech",
+          "jack.zager1": "West Virginia",
+          "nathan.mirochnick31": "Texas Tech",
+          "nickwilliams957": "Texas Tech",
+          "cartersk23": "Texas Tech",
+          "jcmargraff": "West Virginia",
+          "srohl42": "West Virginia",
+          "jcdayton6": "Texas Tech",
+          "calmasterson11": "Texas Tech"
+        }
+      ]
+    },
+    "Oregon at Washington": {
+      "name": "Oregon at Washington",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Oregon",
+          "bradyvols15": "Oregon",
+          "paulgiacomo273": "Oregon",
+          "jack.zager1": "Washington",
+          "nathan.mirochnick31": "Oregon",
+          "nickwilliams957": "Oregon",
+          "cartersk23": "Washington",
+          "jcmargraff": "Oregon",
+          "srohl42": "Oregon",
+          "jcdayton6": "Oregon",
+          "calmasterson11": "Oregon"
+        }
+      ]
+    },
+    "UCF at BYU": {
+      "name": "UCF at BYU",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "BYU",
+          "bradyvols15": "BYU",
+          "paulgiacomo273": "BYU",
+          "jack.zager1": "BYU",
+          "nathan.mirochnick31": "BYU",
+          "nickwilliams957": "BYU",
+          "cartersk23": "UCF",
+          "jcmargraff": "BYU",
+          "srohl42": "BYU",
+          "jcdayton6": "UCF",
+          "calmasterson11": "BYU"
+        }
+      ]
+    },
+    "UCLA at USC": {
+      "name": "UCLA at USC",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "UCLA",
+          "bradyvols15": "UCLA",
+          "paulgiacomo273": "UCLA",
+          "jack.zager1": "USC",
+          "nathan.mirochnick31": "USC",
+          "nickwilliams957": "USC",
+          "cartersk23": "UCLA",
+          "jcmargraff": "USC",
+          "srohl42": "USC",
+          "jcdayton6": "USC",
+          "calmasterson11": "USC"
+        }
+      ]
+    },
+    "Virginia Tech at Virginia": {
+      "name": "Virginia Tech at Virginia",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Virginia",
+          "bradyvols15": "Virginia",
+          "paulgiacomo273": "Virginia",
+          "jack.zager1": "Virginia",
+          "nathan.mirochnick31": "Virginia Tech",
+          "nickwilliams957": "Virginia",
+          "cartersk23": "Virginia Tech",
+          "jcmargraff": "Virginia",
+          "srohl42": "Virginia",
+          "jcdayton6": "Virginia Tech",
+          "calmasterson11": "Virginia Tech"
+        }
+      ]
+    },
+    "Florida State at Florida": {
+      "name": "Florida State at Florida",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Florida",
+          "bradyvols15": "Florida",
+          "paulgiacomo273": "Florida",
+          "jack.zager1": "Florida",
+          "nathan.mirochnick31": "Florida",
+          "nickwilliams957": "Florida",
+          "cartersk23": "Florida",
+          "jcmargraff": "Florida State",
+          "srohl42": "Florida State",
+          "jcdayton6": "Florida",
+          "calmasterson11": "Florida"
+        }
+      ]
+    },
+    "SMU at California": {
+      "name": "SMU at California",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "SMU",
+          "bradyvols15": "SMU",
+          "paulgiacomo273": "SMU",
+          "jack.zager1": "California",
+          "nathan.mirochnick31": "SMU",
+          "nickwilliams957": "SMU",
+          "cartersk23": "SMU",
+          "jcmargraff": "SMU",
+          "srohl42": "California",
+          "jcdayton6": "SMU",
+          "calmasterson11": "SMU"
+        }
+      ]
+    },
+    "Cincinnati at TCU": {
+      "name": "Cincinnati at TCU",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "TCU",
+          "bradyvols15": "TCU",
+          "paulgiacomo273": "Cincinnati",
+          "jack.zager1": "TCU",
+          "nathan.mirochnick31": "Cincinnati",
+          "nickwilliams957": "TCU",
+          "cartersk23": "Cincinnati",
+          "jcmargraff": "TCU",
+          "srohl42": "TCU",
+          "jcdayton6": "TCU",
+          "calmasterson11": "Cincinnati"
+        }
+      ]
+    },
+    "Kentucky at Louisville": {
+      "name": "Kentucky at Louisville",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Kentucky",
+          "bradyvols15": "Louisville",
+          "paulgiacomo273": "Louisville",
+          "jack.zager1": "Louisville",
+          "nathan.mirochnick31": "Louisville",
+          "nickwilliams957": "Kentucky",
+          "cartersk23": "Kentucky",
+          "jcmargraff": "Louisville",
+          "srohl42": "Louisville",
+          "jcdayton6": "Louisville",
+          "calmasterson11": "Louisville"
+        }
+      ]
+    },
+    "Clemson at South Carolina": {
+      "name": "Clemson at South Carolina",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "South Carolina",
+          "bradyvols15": "Clemson",
+          "paulgiacomo273": "South Carolina",
+          "jack.zager1": "South Carolina",
+          "nathan.mirochnick31": "Clemson",
+          "nickwilliams957": "South Carolina",
+          "cartersk23": "Clemson",
+          "jcmargraff": "South Carolina",
+          "srohl42": "South Carolina",
+          "jcdayton6": "Clemson",
+          "calmasterson11": "South Carolina"
+        }
+      ]
+    },
+    "LSU at Oklahoma": {
+      "name": "LSU at Oklahoma",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "LSU",
+          "bradyvols15": "LSU",
+          "paulgiacomo273": "Oklahoma",
+          "jack.zager1": "Oklahoma",
+          "nathan.mirochnick31": "Oklahoma",
+          "nickwilliams957": "Oklahoma",
+          "cartersk23": "Oklahoma",
+          "jcmargraff": "LSU",
+          "srohl42": "Oklahoma",
+          "jcdayton6": "Oklahoma",
+          "calmasterson11": "Oklahoma"
+        }
+      ]
+    },
+    "Vanderbilt at Tennessee": {
+      "name": "Vanderbilt at Tennessee",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Vanderbilt",
+          "bradyvols15": "Vanderbilt",
+          "paulgiacomo273": "Tennessee",
+          "jack.zager1": "Tennessee",
+          "nathan.mirochnick31": "Tennessee",
+          "nickwilliams957": "Tennessee",
+          "cartersk23": "Tennessee",
+          "jcmargraff": "Vanderbilt",
+          "srohl42": "Tennessee",
+          "jcdayton6": "Tennessee",
+          "calmasterson11": "Tennessee"
+        }
+      ]
+    },
+    "Missouri at Arkansas": {
+      "name": "Missouri at Arkansas",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Missouri",
+          "bradyvols15": "Missouri",
+          "paulgiacomo273": "Arkansas",
+          "jack.zager1": "Arkansas",
+          "nathan.mirochnick31": "Missouri",
+          "nickwilliams957": "Arkansas",
+          "cartersk23": "Arkansas",
+          "jcmargraff": "Missouri",
+          "srohl42": "Missouri",
+          "jcdayton6": "Arkansas",
+          "calmasterson11": "Missouri"
+        }
+      ]
+    },
+    "Alabama at Auburn": {
+      "name": "Alabama at Auburn",
+      "weeks": [
+        14
+      ],
+      "picks": [
+        {
+          "alexgarrett00": "Alabama",
+          "bradyvols15": "Alabama",
+          "paulgiacomo273": "Alabama",
+          "jack.zager1": "Alabama",
+          "nathan.mirochnick31": "Alabama",
+          "nickwilliams957": "Alabama",
+          "cartersk23": "Auburn",
+          "jcmargraff": "Alabama",
+          "srohl42": "Auburn",
+          "jcdayton6": "Auburn",
+          "calmasterson11": "Alabama"
         }
       ]
     }
